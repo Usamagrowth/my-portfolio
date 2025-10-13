@@ -1,4 +1,5 @@
 import Card from "./Card"
+import voyager from "../assets/voyager.png"
 import uptora from "../assets/uptora.png"
 import seo from "../assets/seo.png"
 import tiana from "../assets/tiana.png"
@@ -15,35 +16,35 @@ const Portfolio = () => {
       <h3 className="font-bold cursor-pointer text-[#004600]">SEO</h3>
     </div>
      <div className="grid lg:grid-cols-3 gap-5 ">
+
+      <Card 
+       businessName="Voyager Travelling Website"
+       image={voyager}
+       description="A website build for Traveling and Hotel Booking.
+       Tech Stack: React.jsx | Vite | Tailwind CSS | JS"
+       link=""
+       Live="Live Site"
+       git=""
+       Github="Github"
+      />
+
       <Card 
        businessName="Uptora Electronic Store"
        image={uptora}
        description="A website build for Uptora Electronic Store for there electronic Products
        Tech Stack: React.jsx | Vite | Tailwind CSS | JS"
-       link="https://coachmeeshaenterprise.com/"
+       link=""
        Live="Live Site"
        git=""
        Github="Github"
       />
 
      <Card 
-       businessName="Insurance Website"
+       businessName="Insurance Agency Website"
        image={seo}
-       description="A website build for Traveling and Hotel Booking.
-       Tech Stack: React.jsx | Vite | Tailwind CSS | JS"
-       link="https://"
+       description="A website build for insurance agency "
+       link=""
        Live="Live Site"
-       git=""
-       Github="Github"
-      />
-
-      <Card 
-       businessName="Tax Website"
-       image={uptora}
-        description="A website build for Uptora Electronic Store for there electronic Products
-       Tech Stack: React.jsx | Vite | Tailwind CSS | JS"
-       link="https://"
-        Live="Go Live"
        git=""
        Github="Github"
       />
@@ -52,7 +53,7 @@ const Portfolio = () => {
        businessName="Real Estate Flyer"
        image={tiana}
         description="A Flyer design with Canva "
-        Live="View Full Image"
+        fullimage="View Full Image"
       />
 
        <Card 
@@ -60,7 +61,7 @@ const Portfolio = () => {
        image={hungryLionz}
        description="A Flyer design with Canva "
        link="https://"
-        Live="View Live Image"
+       fullimage="View Live Image"
       />
 
      </div>
