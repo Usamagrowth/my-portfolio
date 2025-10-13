@@ -11,9 +11,9 @@ const mobileNav = () => {
 
   return (
     <div className="px-20 bg-[#004600]" > 
-     <nav className="flex justify-between h-[100px] items-center">
+     <nav className="flex justify-between h-[110px] items-center">
     <div className="w-[80px] h-[80px]">
-        <img className="w-[100%] h-[100%] rounded-xl" src="Usamagrowth.jpg" alt="Best Web Designer and Development, Digital Marketing, Front End Developer, SEO Experts, Leads Generation, Logo and Flyers Designs in Ibadan Nigerial" />
+        <img className="w-[100%] h-[100%] rounded-xl" src="favicon.jpg" alt="Best Web Designer and Development, Digital Marketing, Front End Developer, SEO Experts, Leads Generation, Logo and Flyers Designs in Ibadan Nigerial" />
       </div>
       <div onClick={mobileNav} className="lg:hidden cursor-pointer">
        {mobile  ? <X  className="text-white" /> :
@@ -33,7 +33,7 @@ const mobileNav = () => {
      
      { mobile && 
      <aside>
-     <div className="lg:hidden pt-28 flex">
+     <div className="lg:hidden py-5 flex">
       <ul className="flex flex-col gap-5">
           <li className="cursor-pointer text-l font-semibold  text-white hover:text-gray-400">Home</li>
           <a href="#about"> <li className="cursor-pointer text-l font-semibold  text-white hover:text-gray-400">About</li></a>
