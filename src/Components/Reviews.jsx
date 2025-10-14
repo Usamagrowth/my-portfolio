@@ -4,7 +4,7 @@ import dana from "../assets/Dana.jpg"
 import bianca from "../assets/Bianca Shanise.jpg"
 const Reviews = () => {
   return (
-   <div className="flex flex-col px-20 pb-16 gap-4">
+   <div className="flex flex-col px-10 pb-16 gap-4">
     <div className="flex flex-col gap-4">
     <p className="text-[#004600]">__Reviews__</p>
     <h3 className="text-2xl font-bold">What Clients Say</h3>

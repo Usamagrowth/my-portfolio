@@ -6,17 +6,11 @@ import tiana from "../assets/tiana.png"
 import hungryLionz from "../assets/Hungrylionz.png"
 const Portfolio = () => {
   return (
-    <div id="portfolio" className="flex flex-col px-20 pb-16 gap-3">
+    <div id="portfolio" className="flex flex-col px-10 pb-16 gap-3">
      <p className="text-[#004600]">__My Portfolio__</p>
-     <h3 className="text-2xl font-bold">My Excellent Portfolio</h3>
-     <div className="flex gap-3">
-      <h3 className="font-bold  cursor-pointer text-[#004600]">Website Design |</h3> 
-      <h3 className="font-bold cursor-pointer text-[#004600]">Graphics Design |</h3> 
-      <h3 className="font-bold cursor-pointer text-[#004600]">Marketing |</h3>
-      <h3 className="font-bold cursor-pointer text-[#004600]">SEO</h3>
-    </div>
-     <div className="grid lg:grid-cols-3 gap-5 ">
-
+     <h3 className="text-2xl font-bold">My Excellent Prtfolio</h3>
+     <h3 className="font-semibold  text-2xl">Website Design & Development</h3> 
+      <div className="grid lg:grid-cols-3 gap-5 ">
       <Card 
        businessName="Voyager Travelling Website"
        image={voyager}
@@ -33,7 +27,7 @@ const Portfolio = () => {
        image={uptora}
        description="A website build for Uptora Electronic Store for there electronic Products
        Tech Stack: React.jsx | Vite | Tailwind CSS | JS"
-       link=""
+       link="https://uptora-electronics-store-82fac8mrx-usama-s-projects-9ae190d4.vercel.app/"
        Live="Live Site"
        git=""
        Github="Github"
@@ -49,6 +43,10 @@ const Portfolio = () => {
        Github="Github"
       />
 
+      </div>
+
+    <h3 className="font-semibold text-2xl">Graphics Design </h3> 
+    <div className="grid lg:grid-cols-3 gap-5 ">
        <Card 
        businessName="Real Estate Flyer"
        image={tiana}
@@ -62,6 +60,29 @@ const Portfolio = () => {
        description="A Flyer design with Canva "
        link="https://"
        fullimage="View Live Image"
+      />
+    </div>
+
+     <h3 className="font-semibold text-2xl">Marketing</h3>
+     <div className="grid lg:grid-cols-3 gap-5 ">
+      <Card 
+       businessName="Real Estate Flyer"
+       image={tiana}
+        description="A Flyer design with Canva "
+        fullimage="View Full Image"
+      />
+      </div>
+
+     <h3 className="font-semibold text-2xl">SEO</h3>
+     <div className="grid lg:grid-cols-3 gap-5 ">
+      <Card 
+       businessName="Insurance Agency Website"
+       image={seo}
+       description="A website build for insurance agency "
+       link=""
+       Live="Live Site"
+       git=""
+       Github="Github"
       />
 
      </div>

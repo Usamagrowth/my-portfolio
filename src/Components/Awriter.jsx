@@ -47,6 +47,6 @@ export default function Awriter() {
       >
         {currentText}
       </p>
-    </div>
-  );
+   </div>
+   );
 }

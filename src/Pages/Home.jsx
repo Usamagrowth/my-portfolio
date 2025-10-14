@@ -7,6 +7,7 @@ import Navbar from "../Components/Navbar"
 import Portfolio from "../Components/Portfolio"
 import Reviews from "../Components/Reviews"
 import Services from "../Components/Services"
+import Tools from "../Components/Tools"
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
      <Hero />
      <About />
      <Services />
+     <Tools />
      <Discount />
      <Portfolio />
      <Reviews />

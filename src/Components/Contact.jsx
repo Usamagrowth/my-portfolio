@@ -14,7 +14,7 @@ const [fullName, setFullName] = useState("");
       navigate("/")
     }
   return (
-   <section id="contact" className="px-20 pb-16">
+   <section id="contact" className="px-10 pb-16">
     <p className="flex pb-3 text-[#004600]">__Contact Us__</p>
     <div>
     <h3 className="text-2xl pb-3 font-bold">Get In Touch</h3>
@@ -51,7 +51,7 @@ const [fullName, setFullName] = useState("");
     className="outline-none  placeholder-black"
     placeholder="Message" required />
  </div>
- <button className="bg-[#004600] rounded-[40px] text-white py-1 px-2">Get Started Now</button>
+ <button className="bg-[#004600]  hover:text-gray-400 rounded-[40px] text-white py-1 px-2">Get Started Now</button>
    </form>
    </div>
    </section>
