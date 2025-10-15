@@ -29,7 +29,7 @@ const Portfolio = () => {
        Tech Stack: React.jsx | Vite | Tailwind CSS | JS"
        link="https://uptora-electronics-store-82fac8mrx-usama-s-projects-9ae190d4.vercel.app/"
        Live="Live Site"
-       git=""
+       git="https://github.com/Usamagrowth/Uptora-electronics-store"
        Github="Github"
       />
 
@@ -57,7 +57,7 @@ const Portfolio = () => {
      <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 ">
       <Card 
        businessName="Real Estate Flyer"
-       image={tiana}
+       image={seo}
         description="A Flyer design with Canva "
         fullimage="View Full Image"
       />
@@ -66,10 +66,7 @@ const Portfolio = () => {
        businessName="Insurance Agency Website"
        image={seo}
        description="A website build for insurance agency "
-       link=""
-       Live="Live Site"
-       git=""
-       Github="Github"
+       fullimage="View Full Image"
       />
 
      </div>
