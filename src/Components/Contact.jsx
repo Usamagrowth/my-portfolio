@@ -17,8 +17,8 @@ import { useRef, useState } from 'react';
       navigate("#")
 
     EmailJSResponseStatus
-      .sendForm('YOUR_SERVICE_ID', 'template_rolt4xk', form.current, {
-        publicKey: 'rl5-5EWhF22Km5XjP',
+      .sendForm("service_ifz1z0m", "template_rolt4xk", form.current, {
+        publicKey: "rl5-5EWhF22Km5XjP",
       })
       .then(
         () => {

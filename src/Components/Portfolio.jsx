@@ -7,6 +7,7 @@ import hungryLionz from "../assets/Hungrylionz.png"
 import dana from "../assets/dana.png"
 import bdtax from "../assets/bdtax.jpg"
 import jamo from  "../assets/Jamoskido.png"
+import seo1 from "../assets/seo3.png"
 const Portfolio = () => {
   return (
     <div id="portfolio" className="flex flex-col px-10 pb-16 gap-3">
@@ -88,7 +89,7 @@ const Portfolio = () => {
       
       <Card 
        businessName="Insurance Agency Website"
-       image={seo}
+       image={seo1}
        description="A website build for insurance agency "
        fullimage="View Full Image"
       />
