@@ -7,14 +7,14 @@ const Card= ({businessName, description, image, link, Live, git, Github, fullima
  setFullImage(!fullImage) };
 
   return (
-    <div className="p-3 max-h-fit w-[350px] lg:w-[400px] shadow-sm rounded-lg bg-[#004600] items-center">
+    <div className="p-3 max-h-fit w-[330px] sm:w-[300px] lg:w-[400px] shadow-sm rounded-lg bg-[#004600] items-center">
      <div className="space-y-3 flex flex-col">
      <h3 className="text-xl text-[#44e944] font-semibold">{businessName}</h3>
      <div> 
       {fullImage ?  <div className="border border-white rounded-lg w-[100%] h-[100%]">
       <img  className="w-[100%] h-[100%]" src={image} alt="Best Web Developer and marketerWeb Designer and Development, Digital Marketing, Front End Developer, Email Marketing, SEO Experts, Ads Specialist, Leads Generation, Graphic Designs in ibadan Nigeria" />
      </div> :
-     <div  className="border border-white rounded-lg h-[220px] w-[320px] lg:w-[370px]   overflow-hidden object-cover">
+     <div  className="border border-white rounded-lg h-[220px] w-[300px] sm:w-[270px] lg:w-[370px]   overflow-hidden object-cover">
       <img className="w-[100%] h-[100%]" src={image} alt="Best Web Developer and marketerWeb Designer and Development, Digital Marketing, Front End Developer, Email Marketing, SEO Experts, Ads Specialist, Leads Generation, Graphic Designs in ibadan Nigeria" />
      </div> }
      </div>

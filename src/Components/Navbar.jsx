@@ -10,7 +10,7 @@ const mobileNav = () => {
 }
 
   return (
-    <div className="px-10 bg-[#004600] w-[100%] fixed " > 
+    <div className="px-10 bg-[#004600] w-[100%] fixed" > 
      <nav className="flex justify-between h-[110px] items-center">
     <div className="w-[80px] h-[80px]">
         <img className="w-[100%] h-[100%] rounded-xl" src="favicon.jpg" alt="Best Web Designer and Development, Digital Marketing, Front End Developer, SEO Experts, Leads Generation, Logo and Flyers Designs in Ibadan Nigerial" />

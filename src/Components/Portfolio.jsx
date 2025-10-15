@@ -10,7 +10,7 @@ const Portfolio = () => {
      <p className="text-[#004600]">__My Portfolio__</p>
      <h3 className="text-2xl font-bold">My Excellent Prtfolio</h3>
      <h3 className="font-semibold  text-2xl">Website Design & Development</h3> 
-      <div className="grid lg:grid-cols-3 gap-3">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-9">
       <Card 
        businessName="Voyager Travelling Website"
        image={voyager}
@@ -33,12 +33,10 @@ const Portfolio = () => {
        Github="Github"
       />
 
-     
-
       </div>
 
     <h3 className="font-semibold text-2xl">Graphics Design </h3> 
-    <div className="grid lg:grid-cols-3 gap-5 ">
+    <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-9 ">
        <Card 
        businessName="Real Estate Flyer"
        image={tiana}
@@ -55,18 +53,15 @@ const Portfolio = () => {
       />
     </div>
 
-     <h3 className="font-semibold text-2xl">Marketing</h3>
-     <div className="grid grid-cols-2 gap-5 ">
+     <h3 className="font-semibold text-2xl">Marketing & SEO</h3>
+     <div className="grid grid-cols-2 gap-9 ">
       <Card 
        businessName="Real Estate Flyer"
        image={tiana}
         description="A Flyer design with Canva "
         fullimage="View Full Image"
       />
-      </div>
-
-     <h3 className="font-semibold text-2xl">SEO</h3>
-     <div className="grid lg:grid-cols-3 gap-5 ">
+      
       <Card 
        businessName="Insurance Agency Website"
        image={seo}
