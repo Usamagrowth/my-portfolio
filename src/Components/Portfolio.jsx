@@ -10,13 +10,13 @@ const Portfolio = () => {
      <p className="text-[#004600]">__My Portfolio__</p>
      <h3 className="text-2xl font-bold">My Excellent Prtfolio</h3>
      <h3 className="font-semibold  text-2xl">Website Design & Development</h3> 
-      <div className="grid lg:grid-cols-3 gap-5 ">
+      <div className="grid lg:grid-cols-3 gap-3">
       <Card 
        businessName="Voyager Travelling Website"
        image={voyager}
-       description="A website build for Traveling and Hotel Booking.
+       description="A website build for Traveling, Tours and Hotel Booking to make travelling easier.
        Tech Stack: React.jsx | Vite | Tailwind CSS | JS"
-       link=""
+       link="" 
        Live="Live Site"
        git=""
        Github="Github"
@@ -33,15 +33,7 @@ const Portfolio = () => {
        Github="Github"
       />
 
-     <Card 
-       businessName="Insurance Agency Website"
-       image={seo}
-       description="A website build for insurance agency "
-       link=""
-       Live="Live Site"
-       git=""
-       Github="Github"
-      />
+     
 
       </div>
 
