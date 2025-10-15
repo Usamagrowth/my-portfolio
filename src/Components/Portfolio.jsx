@@ -4,6 +4,9 @@ import uptora from "../assets/uptora.png"
 import seo from "../assets/seo.png"
 import tiana from "../assets/tiana.png"
 import hungryLionz from "../assets/Hungrylionz.png"
+import dana from "../assets/dana.png"
+import bdtax from "../assets/bdtax.jpg"
+import jamo from  "../assets/Jamoskido.png"
 const Portfolio = () => {
   return (
     <div id="portfolio" className="flex flex-col px-10 pb-16 gap-3">
@@ -16,9 +19,9 @@ const Portfolio = () => {
        image={voyager}
        description="A website build for Traveling, Tours and Hotel Booking to make travelling easier.
        Tech Stack: React.jsx | Vite | Tailwind CSS | JS"
-       link="" 
+       link="#" 
        Live="Live Site"
-       git=""
+       git="#"
        Github="Github"
       />
 
@@ -45,12 +48,33 @@ const Portfolio = () => {
       />
 
        <Card 
-       businessName="Real Estate Flyer"
+       businessName="Restaurant Flyer"
        image={hungryLionz}
        description="A Flyer design with Canva "
-       link="https://"
        fullimage="View Full Image"
       />
+      
+       <Card 
+       businessName="Tax Flyer"
+       image={bdtax}
+       description="A Flyer design with Canva "
+       fullimage="View Full Image"
+      />
+
+       <Card 
+       businessName="Tax Logo For BD"
+       image={dana}
+       description="A logo design with Canva "
+       fullimage="View Full Image"
+      />
+      
+       <Card 
+       businessName="Arts and Panting Logo"
+       image={jamo}
+       description="A logo design with Canva "
+       fullimage="View Full Image"
+      />
+
     </div>
 
      <h3 className="font-semibold text-2xl">Marketing & SEO</h3>

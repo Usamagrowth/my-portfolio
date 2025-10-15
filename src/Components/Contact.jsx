@@ -1,24 +1,42 @@
-import { User } from "lucide-react";
-import { useState } from "react";
 
-const Contact = () => {
-const [fullName, setFullName] = useState("");
+import { EmailJSResponseStatus } from '@emailjs/browser';
+import { useRef, useState } from 'react';
+
+    const Contact = () => {
+    const [fullName, setFullName] = useState("");
     const [email, setEmail] = useState("");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
+
+    const form = useRef();
 
     //const navigate = useNavigate();
     const handleSubmit = (e) => {
       e.preventDefault();
       console.log(fullName, email, password, message)
-      navigate("/")
-    }
+      navigate("#")
+
+    EmailJSResponseStatus
+      .sendForm('YOUR_SERVICE_ID', 'template_rolt4xk', form.current, {
+        publicKey: 'rl5-5EWhF22Km5XjP',
+      })
+      .then(
+        () => {
+          alert("Message sent Successfully!");
+        },
+        (error) => {
+          console.log("Failed:", error);
+        },
+      );
+  };
+
   return (
    <section id="contact" className="px-10 pb-16">
     <p className="flex pb-3 text-[#004600]">__Contact Us__</p>
     <div>
     <h3 className="text-2xl pb-3 font-bold">Get In Touch</h3>
     <form
+    ref={form}
     onSubmit={handleSubmit}
     className="space-y-5"
      action="">
@@ -51,7 +69,7 @@ const [fullName, setFullName] = useState("");
     className="outline-none  placeholder-black"
     placeholder="Message" required />
  </div>
- <button className="bg-[#004600]  hover:text-gray-400 rounded-[40px] text-white py-1 px-2">Get Started Now</button>
+ <button type="submit" value='Send' className="bg-[#004600]  hover:text-gray-400 rounded-[40px] text-white py-1 px-2">Get Started Now</button>
    </form>
    </div>
    </section>
