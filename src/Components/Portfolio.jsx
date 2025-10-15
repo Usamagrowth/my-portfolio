@@ -56,7 +56,7 @@ const Portfolio = () => {
     </div>
 
      <h3 className="font-semibold text-2xl">Marketing</h3>
-     <div className="grid lg:grid-cols-3 gap-5 ">
+     <div className="grid grid-cols-2 gap-5 ">
       <Card 
        businessName="Real Estate Flyer"
        image={tiana}
