@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { FaStar } from "react-icons/fa6";
 
 const User = ({profile, userName, message, industry}) => {
   return (
@@ -13,7 +13,7 @@ const User = ({profile, userName, message, industry}) => {
     <div className="flex flex-col gap-4 items-center">
       <h2 className="mt-4 text-white text-xl font-bold ">{userName}</h2>
       <p className="text-sm  text-white">{message} </p>
-      <div className="flex gap-2 text-[#FFD700]"> <Star /> <Star /> <Star /> <Star /> <Star /></div> 
+      <div className="flex gap-2 text-[#FFD700]"> <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar /></div> 
       <p className=" font-semibold text-white">{industry}</p>
       </div>
     </div>

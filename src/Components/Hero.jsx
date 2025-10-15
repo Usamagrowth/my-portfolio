@@ -11,7 +11,7 @@ const Hero = () => {
      <h1 className="text-3xl font-bold pb-9">Usama</h1>
      <Awriter />
      </div>
-     <div className="w-lg:[380px] lg:h-[380px] shadow-lg pl-5 pb-5 rounded-xl bg-[#004600]">
+     <div className="w-[380px]  h-[380px] shadow-lg pl-5 pb-5 rounded-xl bg-[#004600]">
       <img className="w-[100%] h-[100%]" src="usama1.png" alt="Best Web Developer and marketerWeb Designer and Development, Digital Marketing, Front End Developer, Email Marketing, SEO Experts, Ads Specialist, Leads Generation, Graphic Designs in ibadan Nigeria " />
      </div>
      </div>

@@ -5,7 +5,7 @@ const Tools = () => {
   return (
     <div className="px-10 pb-16">
      <h3 className="text-2xl font-bold">My Development & Marketing Toolbox</h3>
-    <div className="grid lg:grid-cols-4 grid-cols-2 gap-3 space-y-3 pt-7">
+    <div className="grid grid-cols-4 gap-3 space-y-5 pt-7 items-center">
     <DiHtml5 className="w-20 h-20 text-[#004600]" />
     <DiCss3 className="w-20 h-20 text-[#004600]" />
     <DiJavascript1 className="w-20 h-20 text-[#004600]" />

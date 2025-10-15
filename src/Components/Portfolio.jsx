@@ -59,7 +59,7 @@ const Portfolio = () => {
        image={hungryLionz}
        description="A Flyer design with Canva "
        link="https://"
-       fullimage="View Live Image"
+       fullimage="View Full Image"
       />
     </div>
 

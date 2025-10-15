@@ -7,7 +7,7 @@ const Card= ({businessName, description, image, link, Live, git, Github, fullima
  setFullImage(!fullImage) };
 
   return (
-    <div className="p-3 shadow-sm rounded-lg bg-[#004600] items-center">
+    <div className="p-3 max-lg:w-[450px] shadow-sm rounded-lg bg-[#004600] items-center">
      <div className="space-y-3 flex flex-col">
      <h3 className="text-xl text-[#44e944] font-semibold">{businessName}</h3>
      <div> 
