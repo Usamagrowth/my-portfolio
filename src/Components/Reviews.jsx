@@ -1,7 +1,7 @@
 import User from "./User"
-import stephen from "../assets/stephen browing.jpg"
+import stephen from "../assets/stephen.png"
 import dana from "../assets/Dana.jpg"
-import bianca from "../assets/Bianca Shanise.jpg"
+import bianca from "../assets/bianca.png"
 const Reviews = () => {
   return (
    <div className="flex flex-col px-10 pb-16 gap-4 items-start">
@@ -19,7 +19,7 @@ const Reviews = () => {
      <User 
      profile={stephen}
      userName="Stephen Browing"
-     message="Yes he did a great work Thanks so much."
+     message="Yes he did a great work, each and everyone seeing this text or message of him Thanks so much."
      industry="Insurance Industry"
     />
      <User 

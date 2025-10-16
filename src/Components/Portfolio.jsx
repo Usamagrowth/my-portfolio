@@ -4,7 +4,7 @@ import uptora from "../assets/uptora.png"
 import seo from "../assets/seo.png"
 import tiana from "../assets/tiana.png"
 import hungryLionz from "../assets/Hungrylionz.png"
-import dana from "../assets/dana.png"
+import bd from "../assets/bdtax1.jpg"
 import bdtax from "../assets/bdtax.jpg"
 import jamo from  "../assets/Jamoskido.png"
 import seo1 from "../assets/seo3.png"
@@ -64,7 +64,7 @@ const Portfolio = () => {
 
        <Card 
        businessName="Tax Logo For BD"
-       image={dana}
+       image={bd}
        description="A logo design with Canva "
        fullimage="View Full Image"
       />

@@ -11,8 +11,8 @@ const Hero = () => {
      <h1 className="text-3xl font-bold pb-9">Usama</h1>
      <Awriter />
      </div>
-     <div className="max-w-[360px]  h-[360px] shadow-lg pl-5 pb-5 rounded-xl bg-[#004600]">
-      <img className="w-[100%] h-[100%]" src="usama1.png" alt="Best Web Developer and marketerWeb Designer and Development, Digital Marketing, Front End Developer, Email Marketing, SEO Experts, Ads Specialist, Leads Generation, Graphic Designs in ibadan Nigeria and united state of America USA " />
+     <div className="max-w-[370px] h-[370px] shadow-lg rounded-xl bg-[#004600]">
+      <img className="w-[100%] h-[100%] shadow-lg rounded-xl" src="usama01.png" alt="Best Web Developer and marketerWeb Designer and Development, Digital Marketing, Front End Developer, Email Marketing, SEO Experts, Ads Specialist, Leads Generation, Graphic Designs in ibadan Nigeria and united state of America USA " />
      </div>
      </div>
      </span>
