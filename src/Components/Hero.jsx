@@ -5,14 +5,14 @@ const Hero = () => {
   return (
     <div className="flex pb-16 pt-36 px-10 flex-col gap-5">
     <span>
-    <div className="lg:flex justify-between items-center">
+    <div className="lg:flex lg:space-x-96 lg:gap-x-48  items-center">
     <div>
    <p className="pb-5">I'M</p>
      <h1 className="text-3xl font-bold pb-9">Usama</h1>
      <Awriter />
      </div>
-     <div className="max-w-[365px]  h-[360px] shadow-lg pl-5 pb-5 rounded-xl bg-[#004600]">
-      <img className="w-[100%] h-[100%]" src="usama1.png" alt="Best Web Developer and marketerWeb Designer and Development, Digital Marketing, Front End Developer, Email Marketing, SEO Experts, Ads Specialist, Leads Generation, Graphic Designs in ibadan Nigeria " />
+     <div className="max-w-[360px]  h-[360px] shadow-lg pl-5 pb-5 rounded-xl bg-[#004600]">
+      <img className="w-[100%] h-[100%]" src="usama1.png" alt="Best Web Developer and marketerWeb Designer and Development, Digital Marketing, Front End Developer, Email Marketing, SEO Experts, Ads Specialist, Leads Generation, Graphic Designs in ibadan Nigeria and united state of America USA " />
      </div>
      </div>
      </span>

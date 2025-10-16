@@ -81,16 +81,16 @@ const Portfolio = () => {
      <h3 className="font-semibold text-2xl">Marketing & SEO</h3>
      <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 ">
       <Card 
-       businessName="Real Estate Flyer"
+       businessName="Website SEO "
        image={seo}
-        description="A Flyer design with Canva "
+        description="A Seo Optimization for a tax preparer"
         fullimage="View Full Image"
       />
       
       <Card 
-       businessName="Insurance Agency Website"
+       businessName="Website and Local SEO"
        image={seo1}
-       description="A website build for insurance agency "
+       description="A website seo for usama growth solutions "
        fullimage="View Full Image"
       />
 

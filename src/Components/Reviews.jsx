@@ -9,7 +9,7 @@ const Reviews = () => {
     <p className="text-[#004600]">__Reviews__</p>
     <h3 className="text-2xl font-bold">What Clients Say</h3>
     </div>
-    <div className="flex flex-wrap gap-3">
+    <div className="flex flex-wrap gap-5">
      <User 
      profile={dana}
      userName="Diana"

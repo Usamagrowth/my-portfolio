@@ -14,7 +14,7 @@ import { useRef, useState } from 'react';
     const handleSubmit = (e) => {
       e.preventDefault();
       console.log(fullName, email, password, message)
-      navigate("#")
+    //navigate("#")
 
     EmailJSResponseStatus
       .sendForm("service_ifz1z0m", "template_rolt4xk", form.current, {
@@ -22,7 +22,7 @@ import { useRef, useState } from 'react';
       })
       .then(
         () => {
-          alert("Message sent Successfully!");
+          alert("Message sent Successfully! Kindly check Your Email.");
         },
         (error) => {
           console.log("Failed:", error);
@@ -39,8 +39,8 @@ import { useRef, useState } from 'react';
     ref={form}
     onSubmit={handleSubmit}
     className="space-y-5"
-     action="">
-   <div className=" flex border border-[#004600] rounded-lg md:w-[600px] h-[40px] pl-3">
+     action="submit">
+   <div className=" flex border border-[#004600] rounded-lg md:w-[600px] h-[40px] px-3">
     <input
     value={fullName}
     onChange={(e) => setFullName(e.target.value) }
@@ -48,28 +48,28 @@ import { useRef, useState } from 'react';
     type="text" placeholder="Full Name"
     name="fullname" required />
  </div>
-  <div className="flex border border-[#004600] rounded-lg md:w-[600px] h-[40px] pl-3">
+  <div className="flex border border-[#004600] rounded-lg md:w-[600px] h-[40px] px-3">
     <input
     value={email}
     onChange={(e) => setEmail(e.target.value) }
     className="outline-none w-full  placeholder-black"
     type="email" placeholder="Email" required />
  </div>
- <div className="flex border border-[#004600] rounded-lg md:w-[600px] h-[40px] pl-3">
+ <div className="flex border border-[#004600] rounded-lg md:w-[600px] h-[40px] px-3">
     <input
     value={subject}
     onChange={(e) => setSubject(e.target.value) }
     className="outline-none w-full  placeholder-black"
-    type="email" placeholder="Subject" />
+    type="text" placeholder="Subject" />
  </div>
- <div className="border border-[#004600] rounded-lg md:w-[600px] h-[100px] pl-3 resize-none">
+ <div className="border border-[#004600] rounded-lg md:w-[600px] h-[100px] px-3 resize-none">
     <textarea
     value={message}
     onChange={(e) => setMessage(e.target.value) }
     className="outline-none  placeholder-black"
     placeholder="Message" required />
  </div>
- <button type="submit" value='Send' className="bg-[#004600]  hover:text-gray-400 rounded-[40px] text-white py-1 px-2">Get Started Now</button>
+ <button type="submit" className="bg-[#004600]  hover:text-gray-400 rounded-[40px] text-white py-1 px-3">Get Started Now</button>
    </form>
    </div>
    </section>
