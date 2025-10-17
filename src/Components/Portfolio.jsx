@@ -22,7 +22,7 @@ const Portfolio = () => {
        Tech Stack: React.jsx | Vite | Tailwind CSS | JS"
        link="#" 
        Live="Live Site"
-       git="#"
+       git="https://github.com/Usamagrowth/Voyager-travelling"
        Github="Github"
       />
 
@@ -31,7 +31,7 @@ const Portfolio = () => {
        image={uptora}
        description="A website build for Uptora Electronic Store for there electronic Products
        Tech Stack: React.jsx | Vite | Tailwind CSS | JS"
-       link="https://uptora-electronics-store-82fac8mrx-usama-s-projects-9ae190d4.vercel.app/"
+       link="https://uptora-electronics-store-ymcl.vercel.app/"
        Live="Live Site"
        git="https://github.com/Usamagrowth/Uptora-electronics-store"
        Github="Github"
