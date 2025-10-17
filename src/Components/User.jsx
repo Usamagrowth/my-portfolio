@@ -2,8 +2,8 @@ import { FaStar } from "react-icons/fa6";
 
 const User = ({profile, userName, message, industry}) => {
   return (
-    <div className="flex flex-col max-w-sm mx-auto bg-[#004600] rounded-2xl border-2 border-opacity-10 shadow-md overflow-hidden p-6 items-center">
-    <div className="max-w-sm h-[300px] rounded-full object-cover overflow-hidden border-4 border-white">
+    <div className="flex flex-col max-w-[350px] mx-auto bg-[#004600] rounded-2xl border-2 border-opacity-10 shadow-md overflow-hidden p-6 items-center">
+    <div className="max-w-[240px] max-h-[240px]  rounded-full object-cover overflow-hidden border-4 border-white">
     <img
         className="w-[100%] h-[100%] mx-auto rounded-full"
         src={profile}
