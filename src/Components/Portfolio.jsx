@@ -36,8 +36,25 @@ const Portfolio = () => {
        git="https://github.com/Usamagrowth/Uptora-electronics-store"
        Github="Github"
       />
-
       </div>
+
+     <h3 className="font-semibold text-2xl">Marketing & SEO</h3>
+     <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 ">
+      <Card 
+       businessName="Website SEO "
+       image={seo}
+        description="A Seo Optimization for a tax preparer"
+        fullimage="View Full Image"
+      />
+      
+      <Card 
+       businessName="Website and Local SEO"
+       image={seo1}
+       description="A website seo for usama growth solutions "
+       fullimage="View Full Image"
+      />
+
+     </div>
 
     <h3 className="font-semibold text-2xl">Graphics Design </h3> 
     <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 ">
@@ -77,24 +94,6 @@ const Portfolio = () => {
       />
 
     </div>
-
-     <h3 className="font-semibold text-2xl">Marketing & SEO</h3>
-     <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 ">
-      <Card 
-       businessName="Website SEO "
-       image={seo}
-        description="A Seo Optimization for a tax preparer"
-        fullimage="View Full Image"
-      />
-      
-      <Card 
-       businessName="Website and Local SEO"
-       image={seo1}
-       description="A website seo for usama growth solutions "
-       fullimage="View Full Image"
-      />
-
-     </div>
     </div>
   )
 }
