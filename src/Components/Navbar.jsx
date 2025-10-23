@@ -17,7 +17,7 @@ const mobileNav = () => {
       </div>
       <div onClick={mobileNav} className="lg:hidden cursor-pointer">
        {mobile  ? 
-      <X  className="text-white absolute top-6 right-6" /> :
+      <X  className="text-white" /> :
       <Menu className="text-white" />}
       </div> 
         <div className="hidden lg:flex">
