@@ -3,25 +3,30 @@ import Awriter from "./Awriter";
 const Hero = () => {
 
   return (
-    <div className="flex pb-16 pt-12 px-10 flex-col gap-5">
+    <div className="flex pb-16 px-10 flex-col gap-5">
     <span>
-    <div className="lg:flex lg:space-x-96 lg:gap-x-48  items-center">
+    <div className="lg:flex pt-32 lg:space-x-96 lg:gap-x-48  items-center">
     <div>
    <p className="pb-5">I'M</p>
      <h1 className="text-3xl font-bold pb-9">Usama</h1>
      <Awriter />
+     <div className="pt-5">
+    <a className="lg:flex hidden gap-1 w-fit hover:text-gray-400 text-white  bg-[#004600] py-1 px-3 rounded-[40px]" href="https://upwork.com/freelancers/usamao3">
+    <p className="font-semibold">Hire Me</p><ArrowBigRight /> 
+    </a>
+    </div>
      </div>
-     <div className="max-w-[350px]  max-h-[350px] shadow-lg rounded-xl pt-4 bg-[#004600]">
+     <div className="max-w-[350px] max-h-[350px] shadow-lg rounded-xl pt-4 bg-[#004600]">
       <img className="w-[100%] h-[100%] shadow-lg rounded-xl" src="usama01.png" alt="Best Web Developer and marketerWeb Designer and Development, Digital Marketing, Front End Developer, Email Marketing, SEO Experts, Ads Specialist, Leads Generation, Graphic Designs in ibadan Nigeria and united state of America USA " />
      </div>
      </div>
      </span>
-     <span>
-   <a className="flex gap-1 w-fit hover:text-gray-400 text-white  bg-[#004600] py-1 px-3 rounded-[40px]" href="https://upwork.com/freelancers/usamao3">
-   <p className="font-semibold">Hire Me</p><ArrowBigRight /> 
-   </a>
-    </span>
-    </div>
+   <span className="lg:hidden block">
+    <a className="flex gap-1 w-fit hover:text-gray-400 text-white  bg-[#004600] py-1 px-3 rounded-[40px]" href="https://upwork.com/freelancers/usamao3">
+    <p className="font-semibold">Hire Me</p><ArrowBigRight /> 
+    </a>
+   </span>
+</div>
   )
 }
 

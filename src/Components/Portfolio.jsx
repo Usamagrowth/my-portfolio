@@ -61,21 +61,21 @@ const Portfolio = () => {
        <Card 
        businessName="Real Estate Flyer"
        image={tiana}
-        description="A Flyer design with Canva "
+        description="A Flyer design with Canva for Tiana Clarke a real estate agent "
         fullimage="View Full Image"
       />
 
        <Card 
        businessName="Restaurant Flyer"
        image={hungryLionz}
-       description="A Flyer design with Canva "
+       description="A Flyer design with Canva for Hungry Lionz"
        fullimage="View Full Image"
       />
       
        <Card 
        businessName="Tax Flyer"
        image={bdtax}
-       description="A Flyer design with Canva "
+       description="A Flyer design with Canva for BD Tax and Financial Service "
        fullimage="View Full Image"
       />
 
