@@ -10,12 +10,12 @@ const mobileNav = () => {
 }
 
   return (
-    <div id="home" className="px-10  bg-[#004600] w-[100%] fixed" > 
+    <div id="home" className="px-10 bg-[#004600] w-[100%] " > 
      <nav className="flex justify-between h-[110px] items-center ">
-     <div className="w-[80px] h-[80px]">
+     <div className="w-[80px] h-[80px] z-[200]">
         <img className="w-[100%] h-[100%] rounded-xl" src="favicon.jpg" alt="Best Web Designer and Development, Digital Marketing, Front End Developer, SEO Experts, Leads Generation, Logo and Flyers Designs in Ibadan Nigerial" />
       </div>
-      <div onClick={mobileNav} className="lg:hidden cursor-pointer">
+      <div onClick={mobileNav} className="lg:hidden z-[200] cursor-pointer">
        {mobile  ? 
       <X  className="text-white" /> :
       <Menu className="text-white" />}
@@ -32,10 +32,10 @@ const mobileNav = () => {
       </div>
      </nav>
   
-     { mobile && 
+     {mobile && 
      <aside>
-     <div className="lg:hidden py-5 flex ">
-      <ul className="flex flex-col gap-5 ">
+     <div className="lg:hidden bg-[#004600] flex w-full h-[600px] fixed inset-0 z-50">
+      <ul className="flex flex-col gap-5 pt-32 px-10 ">
          <a onClick={()=> setMobile(false)} href="#home"> <li className="cursor-pointer text-l font-semibold  text-white hover:text-gray-400">Home</li></a>
           <a onClick={()=> setMobile(false)} href="#about"> <li className="cursor-pointer text-l font-semibold  text-white hover:text-gray-400">About</li></a>
          <a onClick={mobileNav} href="#service"> <li className="cursor-pointer text-l font-semibold  text-white hover:text-gray-400">Service</li></a>

@@ -3,7 +3,7 @@ import Awriter from "./Awriter";
 const Hero = () => {
 
   return (
-    <div className="flex pb-16 pt-36 px-10 flex-col gap-5">
+    <div className="flex pb-16 pt-12 px-10 flex-col gap-5">
     <span>
     <div className="lg:flex lg:space-x-96 lg:gap-x-48  items-center">
     <div>
