@@ -1,5 +1,5 @@
 import { ArrowBigRight} from "lucide-react";
-import Awriter from "./Awriter";
+import Awriter from "./utils/Awriter";
 const Hero = () => {
 
   return (

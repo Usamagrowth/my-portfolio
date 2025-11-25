@@ -1,4 +1,4 @@
-import Card from "./Card"
+import Card from "./utils/Card"
 import voyager from "../assets/voyager.png"
 import uptora from "../assets/uptora.png"
 import seo from "../assets/seo.png"
@@ -10,7 +10,7 @@ import jamo from  "../assets/Jamoskido.png"
 import seo1 from "../assets/seo3.png"
 const Portfolio = () => {
   return (
-    <div id="portfolio" className="flex flex-col px-10 pb-16 gap-3">
+    <div id="portfolio" className="flex flex-col scroll-mt-36 px-10 pb-16 gap-3">
      <p className="text-[#004600]">__My Portfolio__</p>
      <h3 className="text-2xl font-bold">My Excellent Portfolio</h3>
      <h3 className="font-semibold  text-2xl">Website Design & Development</h3> 

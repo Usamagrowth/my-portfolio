@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="px-10 pb-16">
+    <section id="contact" className="px-10 pb-16 scroll-mt-36 ">
       <p className="flex pb-3 text-[#004600]">_Contact Us_</p>
       <div>
         <h3 className="text-2xl pb-3 font-bold">Get In Touch</h3>

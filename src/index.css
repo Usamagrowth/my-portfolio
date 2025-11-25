@@ -1,6 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.title{display: none;}
-.subtitle{display: none;}

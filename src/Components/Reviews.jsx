@@ -1,10 +1,10 @@
-import User from "./User"
+import User from "./utils/User"
 import stephen from "../assets/stephen.png"
 import dana from "../assets/Dana.jpg"
 import bianca from "../assets/bianca.png"
 const Reviews = () => {
   return (
-   <div className="flex flex-col px-10 pb-16 gap-4 items-start">
+   <div className="flex flex-col px-10 pb-16 scroll-mt-36 gap-4 items-start">
     <div className="flex flex-col gap-4">
     <p className="text-[#004600]">__Reviews__</p>
     <h3 className="text-2xl font-bold">What Clients Say</h3>

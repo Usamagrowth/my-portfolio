@@ -1,7 +1,7 @@
 import { BarChart,  CodeSquareIcon, Globe, PenTool, Target, TrendingUp } from "lucide-react"
 const Services = () => {
   return (
-    <div id="service" className="flex flex-col px-10 pb-16 gap-4">
+    <div id="service" className="flex flex-col px-10 pb-16 scroll-mt-36 gap-4">
     <p className="text-[#004600]">__What I do__</p>
     <h3 className="text-3xl font-bold">Awesome Quality Services</h3>
     <div className="grid lg:grid-cols-2 gap-7">
