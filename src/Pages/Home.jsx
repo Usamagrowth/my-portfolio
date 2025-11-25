@@ -11,7 +11,7 @@ import Tools from "../Components/Tools"
 
 const Home = () => {
   return (
-    <div className="flex flex-col py-2">
+    <div>
      <Navbar />
      <Hero />
      <About />
