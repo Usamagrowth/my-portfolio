@@ -34,7 +34,7 @@ const mobileNav = () => {
   
      {mobile && 
      <aside>
-     <div className="lg:hidden bg-[#004600] flex w-full h-[610px] fixed inset-0 z-50">
+     <div className="lg:hidden bg-[#004600] flex w-full h-full fixed inset-0 z-50">
       <ul className="flex flex-col gap-5 pt-32 px-11 ">
          <a onClick={()=> setMobile(false)}  href="#"> <li className="cursor-pointer text-xl font-semibold  text-white hover:text-gray-400">Home</li></a>
           <a onClick={()=> setMobile(false)} href="#about"> <li className="cursor-pointer text-xl font-semibold  text-white hover:text-gray-400">About</li></a>
