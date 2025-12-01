@@ -7,7 +7,7 @@ import hungryLionz from "../assets/Hungrylionz.png"
 import bd from "../assets/bdtax1.jpg"
 import bdtax from "../assets/bdtax.jpg"
 import jamo from  "../assets/Jamoskido.png"
-import seo1 from "../assets/seo3.png"
+import seo1 from "../assets/usamaseo.jpeg"
 const Portfolio = () => {
   return (
     <div id="portfolio" className="flex flex-col scroll-mt-36 px-10 pb-16 gap-3">
