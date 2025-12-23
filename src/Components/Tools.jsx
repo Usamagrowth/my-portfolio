@@ -1,5 +1,5 @@
 import { DiCss3, DiHtml5, DiJavascript1 } from "react-icons/di"
-import { SiAdminer, SiGooglesearchconsole, SiMeta, SiNodedotjs, SiReact, SiVite } from "react-icons/si"
+import { SiCanva, SiGooglesearchconsole, SiMeta, SiNodedotjs, SiReact, SiTypescript, SiVite } from "react-icons/si"
 
 const Tools = () => {
   return (
@@ -12,6 +12,8 @@ const Tools = () => {
     <SiReact className="w-20 h-20 text-[#004600]" />
     <SiNodedotjs className="w-20 h-20 text-[#004600]" />
     <SiVite className="w-20 h-20 text-[#004600]" />
+    <SiCanva className="w-20 h-20 text-[#004600]" />
+    <SiTypescript className="w-20 h-20 text-[#004600]" />
     <SiGooglesearchconsole className="w-20 h-20 text-[#004600]" />
     <SiMeta className="w-20 h-20 text-[#004600]" />
     </div>
