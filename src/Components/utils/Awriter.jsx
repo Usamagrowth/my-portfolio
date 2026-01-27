@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import { ThemeCont } from "../../contexts/ThemeContext";
 
 export default function Awriter() {
+  const { colors } = ThemeCont();
   const texts = [
     "Frontend Developer",
     "Digital marketer",
@@ -43,7 +45,8 @@ export default function Awriter() {
   return (
     <div className="text-2xl font-semibold pb-5">
       <p
-        className="transition-opacity duration-500 "
+        className="transition-opacity duration-500"
+        style={{ color: colors.accent }}
       >
         {currentText}
       </p>

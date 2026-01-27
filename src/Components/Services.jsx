@@ -1,35 +1,107 @@
-import { BarChart,  CodeSquareIcon, Globe, PenTool, Target, TrendingUp } from "lucide-react"
+import { BarChart, CodeSquareIcon, Globe, PenTool, Target, TrendingUp } from "lucide-react"
+import { ThemeCont } from "../contexts/ThemeContext"
+
 const Services = () => {
+  const { colors } = ThemeCont();
+
+  const services = [
+    {
+      icon: CodeSquareIcon,
+      title: "Frontend Development",
+      description: "Creating engaging, high-performance web experiences with React, HTML5, and CSS3. Building responsive, intuitive, and accessible interfaces that work seamlessly across all devices.",
+      featured: true
+    },
+    {
+      icon: Globe,
+      title: "Web Design & Development",
+      description: "Building compelling websites from concept to launch. Custom design, responsive development, e-commerce solutions, and ongoing maintenance for outstanding online presence."
+    },
+    {
+      icon: TrendingUp,
+      title: "Digital Marketing",
+      description: "Results-driven strategies that elevate brands and drive conversions. SEO, SEM, content strategy, social media campaigns, and analytics-driven optimization."
+    },
+    {
+      icon: Target,
+      title: "Lead Generation",
+      description: "Robust lead generation funnels delivering high-quality prospects. Inbound marketing, targeted advertising, email automation, and CRM integration."
+    },
+    {
+      icon: BarChart,
+      title: "SEO Optimization",
+      description: "Boosting online visibility through meticulous SEO strategies. Keyword research, technical audits, on-page optimization, and link-building campaigns."
+    },
+    {
+      icon: PenTool,
+      title: "Graphic Design",
+      description: "Crafting impactful visual identities and engaging content. Branding, marketing collateral, UI/UX elements, and print materials that communicate effectively."
+    }
+  ];
+
   return (
-    <div id="service" className="flex flex-col px-10 pb-16 scroll-mt-36 gap-4">
-    <p className="text-[#004600]">__What I do__</p>
-    <h3 className="text-3xl font-bold">Awesome Quality Services</h3>
-    <div className="grid lg:grid-cols-2 gap-7">
-    <div className="flex text-white shadow-md rounded-md border-2 border-opacity-10 flex-col gap-3 bg-[#004600] p-3 hover:text-white">
-    <CodeSquareIcon  /> <h3 className="text-2xl font-semibold">Frontend Developer</h3>
-     <p>I create engaging, high-performance web experiences with a keen eye for detail and user satisfaction. My focus is on building responsive, intuitive, and accessible interfaces using modern JavaScript frameworks like React, HTML5, and CSS3, ensuring seamless functionality across all devices.</p>
-    </div>
-    <div className="flex bg-white shadow-md rounded-md border-2 border-opacity-10 flex-col gap-3 hover:bg-[#004600] p-3 hover:text-white">
-    <Globe /> <h3 className="text-2xl font-semibold">Web Design & Development</h3>
-    <p>I build compelling websites from concept to launch, focusing on aesthetic appeal, intuitive user experience, and robust functionality. My services include custom website design, responsive development (WordPress/Custom CMS), e-commerce solutions, and ongoing maintenance to ensure your online presence stands out.</p>
-    </div>
-    <div className="flex bg-white shadow-md rounded-md border-2 border-opacity-10 flex-col gap-3 hover:bg-[#004600] p-3 hover:text-white">
-    <TrendingUp /> <h3 className="text-2xl font-semibold">Digital Marketing</h3>
-    <p>As a results-driven digital marketer, I specialize in crafting comprehensive strategies that elevate brands, drive targeted traffic, and maximize conversions. My expertise spans SEO, SEM, content strategy, social media campaigns, and analytics-driven optimization to achieve measurable business growth.</p>
-    </div>
-    <div className="flex bg-white shadow-md rounded-md border-2 border-opacity-10 flex-col gap-3 hover:bg-[#004600] p-3 hover:text-white">
-    <Target /> <h3 className="text-2xl font-semibold">Leads Generations</h3>
-    <p>I design and implement robust lead generation funnels that consistently deliver high-quality prospects. Utilizing a blend of inbound marketing, targeted advertising (Google Ads, Social Media), email automation, and CRM integration, I convert interest into actionable sales opportunities.</p>
-    </div>
-    <div className="flex bg-white shadow-md rounded-md border-2 border-opacity-10 flex-col gap-3 hover:bg-[#004600] p-3 hover:text-white">
-    <BarChart /> <h3 className="text-xl font-semibold">SEO Experts</h3>
-    <p>I boost online visibility and organic search performance through meticulous SEO strategies. From in-depth keyword research and technical SEO audits to on-page optimization and link-building campaigns, I help businesses rank higher and attract their ideal customers effectively.</p>
-    </div>
-    <div className="flex bg-white shadow-md rounded-md border-2 border-opacity-10 flex-col gap-3 hover:bg-[#004600] p-3 hover:text-white">
-   <PenTool /> <h3 className="text-xl font-semibold">Graphic Design</h3>
-    <p>I craft impactful visual identities and engaging graphic content that resonates with target audiences. My design expertise covers branding (logos, style guides), marketing collateral (banners, social media graphics), UI/UX elements, and print materials, ensuring every visual communicates your message effectively.</p>
-    </div>
-    </div>
+    <div id="service" className="py-20 px-6" style={{ backgroundColor: colors.cardBg }}>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <p className="text-lg font-medium mb-4" style={{ color: colors.accent }}>SERVICES</p>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6" style={{ color: colors.text }}>
+            What I Do Best
+          </h2>
+          <p className="text-xl max-w-3xl mx-auto leading-relaxed opacity-90" style={{ color: colors.text }}>
+            Comprehensive digital solutions to elevate your brand and drive results
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 relative hover:-translate-y-2 hover:scale-[1.02] cursor-pointer border border-gray-100 hover:border-emerald-200"
+            >
+              {/* Featured badge */}
+              {service.featured && (
+                <div className="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500 text-white group-hover:bg-emerald-600 transition-colors duration-300">
+                  Featured
+                </div>
+              )}
+
+              {/* Icon */}
+              <div className="mb-6">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-4 bg-gray-50 group-hover:bg-emerald-50 transition-colors duration-300">
+                  <service.icon
+                    className="w-8 h-8 text-emerald-600 group-hover:text-emerald-700 group-hover:scale-110 transition-all duration-300"
+                  />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 group-hover:text-emerald-700 transition-colors duration-300" style={{ color: colors.text }}>
+                  {service.title}
+                </h3>
+              </div>
+
+              <p className="leading-relaxed opacity-90 group-hover:opacity-100 transition-opacity duration-300" style={{ color: colors.text }}>
+                {service.description}
+              </p>
+
+              {/* Hover indicator */}
+              <div className="absolute bottom-4 right-4 w-2 h-2 rounded-full bg-emerald-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          ))}
+        </div>
+
+        {/* Call to action */}
+        <div className="text-center mt-16">
+          <p className="text-lg mb-6 opacity-90" style={{ color: colors.text }}>
+            Ready to start your project?
+          </p>
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:-translate-y-1 bg-emerald-500 text-white hover:bg-emerald-600 transform"
+          >
+            Get In Touch
+            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
   )
 }

@@ -1,32 +1,66 @@
 import { ArrowBigRight} from "lucide-react";
 import Awriter from "./utils/Awriter";
+import { ThemeCont } from "../contexts/ThemeContext";
+import { FaGreaterThan } from "react-icons/fa6";
+
 const Hero = () => {
+  const { colors } = ThemeCont();
 
   return (
-    <div className="flex pb-16 px-10 flex-col gap-5">
-    <span>
-    <div className="lg:flex pt-32 lg:space-x-96 lg:gap-x-48  items-center">
-    <div>
-   <p className="pb-5">I'M</p>
-     <h1 className="text-3xl font-bold pb-9">Usama</h1>
-     <Awriter />
-     <div className="pt-5">
-    <a className="lg:flex hidden gap-1 w-fit hover:text-gray-400 text-white  bg-[#004600] py-1 px-3 rounded-[40px]" href="https://upwork.com/freelancers/usamao3">
-    <p className="font-semibold">Hire Me</p><ArrowBigRight /> 
-    </a>
+    <div className="min-h-screen flex items-center justify-center px-6 py-20" style={{ background: colors.gradient }}>
+      <div className="max-w-7xl mx-auto w-full">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
+          <div className="text-center lg:text-left space-y-3 pt-3">
+            <div className="space-y-2 flex items-center lg:justify-start justify-center gap-3">
+              <p className="font-medium tracking-wide text-xl" style={{ color: colors.accent }}>HI, I'M</p>
+              <h1 className="text-4xl lg:text-7xl font-bold leading-tight" style={{ color: colors.text }}>
+                Usama
+              </h1>
+            </div>
+
+            <Awriter />
+
+            <p className="text-xl leading-relaxed max-w-lg mx-auto lg:mx-0" style={{ color: colors.text }}>
+              Expert React Developer & Digital Marketing Specialist crafting exceptional digital experiences that drive results.
+            </p>
+
+            <div className="flex flex-row sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+              <a
+                href="https://upwork.com/freelancers/usamao3"
+                className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex-1 sm:flex-initial justify-center"
+                style={{ backgroundColor: colors.secondary, color: colors.primary }}
+              >
+                Hire Me <ArrowBigRight className="w-4 h-4 sm:w-5 sm:h-5" />
+              </a>
+              <a
+                href="#portfolio"
+                className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg border-2 transition-all duration-300 hover:scale-105 flex-1 sm:flex-initial justify-center"
+                style={{ borderColor: colors.secondary, color: colors.secondary }}
+              >
+                View My Work  <FaGreaterThan className="w-4 h-4 sm:w-5 sm:h-5" />
+              </a>
+            </div>
+          </div>
+
+          {/* Image */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative">
+              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-4" style={{ borderColor: colors.secondary }}>
+                <img
+                  className="w-full h-full object-cover"
+                  src="usama01.png"
+                  alt="Usama - Expert React Developer & Digital Marketing Specialist"
+                />
+              </div>
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full opacity-20" style={{ backgroundColor: colors.accent }}></div>
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 rounded-full opacity-30" style={{ backgroundColor: colors.secondary }}></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-     </div>
-     <div className="max-w-[350px] max-h-[350px] shadow-lg rounded-xl pt-4 bg-[#004600]">
-      <img className="w-[100%] h-[100%] shadow-lg rounded-xl" src="usama01.png" alt="Best Web Developer and marketerWeb Designer and Development, Digital Marketing, Front End Developer, Email Marketing, SEO Experts, Ads Specialist, Leads Generation, Graphic Designs in ibadan Nigeria and united state of America USA " />
-     </div>
-     </div>
-     </span>
-   <span className="lg:hidden block">
-    <a className="flex gap-1 w-fit hover:text-gray-400 text-white  bg-[#004600] py-1 px-3 rounded-[40px]" href="https://upwork.com/freelancers/usamao3">
-    <p className="font-semibold">Hire Me</p><ArrowBigRight /> 
-    </a>
-   </span>
-</div>
   )
 }
 

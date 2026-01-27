@@ -1,9 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ThemeCont } from "../contexts/ThemeContext";
 
 // Initialize AOS once
 export default function Sprogress() {
+  const { colors } = ThemeCont();
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
@@ -19,16 +22,16 @@ export default function Sprogress() {
   ];
 
   return (
-    <div className="grid md:grid-cols-2 gap-8 py-6 ">
+    <div className="grid md:grid-cols-2 gap-8 py-6">
       {services.map((service, i) => (
-        <ServiceItem key={i} name={service.name} target={service.target} />
+        <ServiceItem key={i} name={service.name} target={service.target} colors={colors} />
       ))}
     </div>
   );
 }
 
 // Individual service component
-function ServiceItem({ name, target }) {
+function ServiceItem({ name, target, colors }) {
   const [percentage, setPercentage] = useState(0);
   const ref = useRef(null);
 
@@ -61,14 +64,15 @@ function ServiceItem({ name, target }) {
     <div
       ref={ref}
       data-aos="fade-up"
-      className="bg-white p-6 rounded-lg shadow-md"
+      className="p-6 rounded-lg shadow-md"
+      style={{ backgroundColor: colors.cardBg }}
     >
-      <h3 className="text-lg font-bold mb-2">{name}</h3>
-      <p className="text-2xl font-semibold mb-2">{percentage}%</p>
-      <div className="w-full bg-gray-200 rounded-full h-4">
+      <h3 className="text-lg font-bold mb-2" style={{ color: colors.text }}>{name}</h3>
+      <p className="text-2xl font-semibold mb-2" style={{ color: colors.text }}>{percentage}%</p>
+      <div className="w-full rounded-full h-4" style={{ backgroundColor: colors.secondary }}>
         <div
-          className="bg-[#004600] h-4 rounded-full transition-all duration-300"
-          style={{ width: `${percentage}%` }}
+          className="h-4 rounded-full transition-all duration-300"
+          style={{ width: `${percentage}%`, backgroundColor: colors.primary }}
         ></div>
       </div>
     </div>
