@@ -51,11 +51,11 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 relative hover:-translate-y-2 hover:scale-[1.02] cursor-pointer border border-gray-100 hover:border-emerald-200"
+              className="group rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 relative hover:-translate-y-2 hover:scale-[1.02] cursor-pointer border border-gray-100 hover:border-emerald-200"
             >
               {/* Featured badge */}
               {service.featured && (
