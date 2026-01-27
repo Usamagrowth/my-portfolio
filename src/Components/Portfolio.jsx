@@ -51,7 +51,7 @@ const Portfolio = () => {
     },
     {
       title: "Marketing & SEO",
-      icon: "📈",
+  
       projects: [
         {
           businessName: "Website SEO Optimization",
@@ -69,7 +69,6 @@ const Portfolio = () => {
     },
     {
       title: "Graphic Design",
-      icon: "🎨",
       projects: [
         {
           businessName: "Real Estate Flyer",
