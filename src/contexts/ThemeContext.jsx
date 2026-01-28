@@ -25,6 +25,7 @@ export const ThemeProvider = ({ children }) => {
       accent: isDark ? '#059669' : '#10b981', // Darker emerald vs emerald
       background: isDark ? '#1e293b' : '#f8fafc', // Slate vs light gray
       text: isDark ? '#f1f5f9' : '#1e293b', // Light slate vs dark slate
+      input: isDark ? '#000000' : '#0000000',
       cardBg: isDark ? '#334155' : '#f9fafb', // Darker slate vs light gray
       border: isDark ? '#475569' : '#e2e8f0', // Medium slate vs light border
       gradient: isDark ? 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)' : 'linear-gradient(135deg, #f8fafc 0%, #f9fafb 100%)',

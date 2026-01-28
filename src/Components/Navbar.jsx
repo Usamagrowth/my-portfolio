@@ -1,106 +1,110 @@
 import { Menu, X, Sun, Moon } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { ThemeCont } from "../contexts/ThemeContext"
+
+const navLinks = [
+  { label: "Home", href: "#" },
+  { label: "About", href: "#about" },
+  { label: "Service", href: "#service" },
+  { label: "Portfolio", href: "#portfolio" },
+  { label: "Blog", href: "https://usamagrowthsolutions.blogspot.com/", external: true },
+  { label: "Contact", href: "#contact" },
+];
 
 const Navbar = () => {
   const { isDark, toggleTheme, colors } = ThemeCont();
   const [mobile, setMobile] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const mobileNav = () => {
-    setMobile(!mobile);
-  }
+  useEffect(() => {
+    // Lock body scroll when mobile menu is open
+    document.body.style.overflow = mobile ? 'hidden' : '';
+    return () => { document.body.style.overflow = '' };
+  }, [mobile]);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    onScroll();
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
-    <nav className="fixed w-full z-50 backdrop-blur-md border-b" style={{ backgroundColor: colors.primary + '80', borderColor: colors.border }}>
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex justify-between items-center h-20">
-          {/* Logo */}
-          <a href="#" className="flex items-center space-x-3">
-            <img className="w-12 h-12 rounded-xl shadow-lg" src="favicon.jpg" alt="Usama - React Developer & Digital Marketing" />
-            <span className="text-xl font-bold hidden sm:block" style={{ color: colors.text }}>Usama</span>
-          </a>
+    <div
+      className="px-10 fixed w-[100%] z-50"
+      style={{
+        backgroundColor: colors.primary,
+        boxShadow: scrolled ? '0 10px 30px rgba(2,6,23,0.08)' : 'transparent',
+      }}
+    >
+      <nav className="flex justify-between h-20 items-center">
+        <a href="#" className="w-14 h-14 z-[200]">
+          <img className="w-full h-full rounded-xl" src="favicon.jpg" alt="logo" />
+        </a>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
-            <ul className="flex space-x-8">
-              {[
-                { href: '#', label: 'Home' },
-                { href: '#about', label: 'About' },
-                { href: '#service', label: 'Services' },
-                { href: '#portfolio', label: 'Portfolio' },
-                { href: 'https://usamagrowthsolutions.blogspot.com/', label: 'Blog' },
-                { href: '#contact', label: 'Contact' }
-              ].map((item, index) => (
-                <li key={index}>
-                  <a
-                    href={item.href}
-                    className="font-medium hover:text-opacity-80 transition-colors duration-200"
-                    style={{ color: colors.text }}
-                  >
-                    {item.label}
-                  </a>
+        <div className="flex items-center gap-4">
+          <div className="hidden lg:flex">
+            <ul className="flex gap-9">
+              {navLinks.map((link) => (
+                <li key={link.label} className="cursor-pointer text-l font-semibold hover:opacity-70" style={{ color: colors.secondary }}>
+                  {link.external ? (
+                    <a href={link.href} target="_blank" rel="noreferrer">{link.label}</a>
+                  ) : (
+                    <a href={link.href}>{link.label}</a>
+                  )}
                 </li>
               ))}
             </ul>
+          </div>
 
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-opacity-20 transition-all duration-200"
-              style={{ color: colors.secondary }}
-            >
+          <button onClick={toggleTheme} className="p-2 rounded-full" style={{ color: colors.secondary }}>
+            {isDark ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
+
+          <div onClick={() => setMobile(!mobile)} className="lg:hidden z-[200] cursor-pointer">
+            {mobile ? <X style={{ color: colors.secondary }} className="h-9 w-9" /> : <Menu style={{ color: colors.secondrary }} className="h-9 w-9" />}
+          </div>
+        </div>
+      </nav>
+
+      {/* Full-screen mobile menu overlay - shows theme icon and left-aligned links */}
+      {mobile && (
+        <aside className="lg:hidden fixed inset-0 z-50 pt-24 px-6" style={{ backgroundColor: colors.primary }}>
+          <div className="absolute top-5 right-6 px-16 ">
+            <button onClick={toggleTheme} className="p-2 rounded-full" style={{ color: colors.secondary }}>
               {isDark ? <Sun size={20} /> : <Moon size={20} />}
             </button>
           </div>
-
-          {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center space-x-2">
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-full"
-              style={{ color: colors.secondary }}
-            >
-              {isDark ? <Sun size={18} /> : <Moon size={18} />}
-            </button>
-            <button onClick={mobileNav} className="p-2">
-              {mobile ?
-                <X style={{ color: colors.text }} size={24} /> :
-                <Menu style={{ color: colors.text }} size={24} />
-              }
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      {mobile && (
-        <div className="lg:hidden absolute top-full left-0 w-full shadow-xl" style={{ backgroundColor: colors.cardBg }}>
-          <div className="px-6 py-4">
-            <ul className="space-y-4">
-              {[
-                { href: '#', label: 'Home' },
-                { href: '#about', label: 'About' },
-                { href: '#service', label: 'Services' },
-                { href: '#portfolio', label: 'Portfolio' },
-                { href: 'https://usamagrowthsolutions.blogspot.com/', label: 'Blog' },
-                { href: '#contact', label: 'Contact' }
-              ].map((item, index) => (
-                <li key={index}>
+         <ul className="flex flex-col gap-4 items-start px-5">
+            {navLinks.map((link) => (
+              <li key={link.label} className="w-full">
+                {link.external ? (
                   <a
-                    href={item.href}
                     onClick={() => setMobile(false)}
-                    className="block py-2 font-medium hover:text-opacity-80 transition-colors duration-200"
+                    href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block text-left py-2 font-semibold text-lg"
                     style={{ color: colors.text }}
                   >
-                    {item.label}
+                    {link.label}
                   </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+                ) : (
+                  <a
+                    onClick={() => setMobile(false)}
+                    href={link.href}
+                    className="block text-left py-2 font-semibold text-lg"
+                    style={{ color: colors.text}}
+                  >
+                    {link.label}
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </aside>
       )}
-    </nav>
+    </div>
   )
 }
 

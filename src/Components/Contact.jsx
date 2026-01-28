@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { ThemeCont } from "../contexts/ThemeContext";
 import { Mail, Phone, MapPin, Send, CheckCircle, User, MessageSquare } from 'lucide-react';
@@ -11,6 +11,10 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const form = useRef();
+
+  useEffect(() => {
+    emailjs.init("rl5-5EWhF22Km5XjP");
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -114,11 +118,12 @@ const Contact = () => {
 
               <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                 <div className="relative">
-                  <label className="block text-sm font-semibold mb-2 text-gray-700 flex items-center gap-2">
+                  <label className="text-sm font-semibold mb-2 text-gray-700 flex items-center gap-2">
                     <User className="w-4 h-4" />
                     Full Name
                   </label>
                   <input
+                    name="full_name"
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
                     type="text"
@@ -127,18 +132,19 @@ const Contact = () => {
                     className="w-full px-4 py-4 pl-12 rounded-xl border-2 focus:outline-none focus:ring-4 focus:ring-emerald-100 focus:border-emerald-400 transition-all duration-200 bg-gray-50 hover:bg-white"
                     style={{
                       borderColor: colors.border,
-                      color: colors.text
+                      color: colors.input
                     }}
                   />
                   <User className="absolute left-4 top-12 w-5 h-5 text-gray-400" />
                 </div>
 
                 <div className="relative">
-                  <label className="block text-sm font-semibold mb-2 text-gray-700 flex items-center gap-2">
+                  <label className="text-sm font-semibold mb-2 text-gray-700 flex items-center gap-2">
                     <Mail className="w-4 h-4" />
                     Email Address
                   </label>
                   <input
+                    name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     type="email"
@@ -147,18 +153,19 @@ const Contact = () => {
                     className="w-full px-4 py-4 pl-12 rounded-xl border-2 focus:outline-none focus:ring-4 focus:ring-emerald-100 focus:border-emerald-400 transition-all duration-200 bg-gray-50 hover:bg-white"
                     style={{
                       borderColor: colors.border,
-                      color: colors.text
+                      color: colors.input
                     }}
                   />
                   <Mail className="absolute left-4 top-12 w-5 h-5 text-gray-400" />
                 </div>
 
                 <div className="relative">
-                  <label className="block text-sm font-semibold mb-2 text-gray-700 flex items-center gap-2">
+                  <label className="text-sm font-semibold mb-2 text-gray-700 flex items-center gap-2">
                     <MessageSquare className="w-4 h-4" />
                     Message
                   </label>
                   <textarea
+                    name="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Tell me about your project..."
@@ -167,7 +174,7 @@ const Contact = () => {
                     className="w-full px-4 py-4 pl-12 rounded-xl border-2 focus:outline-none focus:ring-4 focus:ring-emerald-100 focus:border-emerald-400 transition-all duration-200 resize-none bg-gray-50 hover:bg-white"
                     style={{
                       borderColor: colors.border,
-                      color: colors.text
+                      color: colors.input
                     }}
                   />
                   <MessageSquare className="absolute left-4 top-12 w-5 h-5 text-gray-400" />
