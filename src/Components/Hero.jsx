@@ -6,7 +6,7 @@ const Hero = () => {
   const { colors } = ThemeCont();
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 py-20" style={{ background: colors.gradient }}>
+    <div className="min-h-screen flex items-center justify-center px-6 md:py-5 py-20" style={{ background: colors.gradient }}>
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
