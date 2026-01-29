@@ -20,8 +20,17 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    const templateParams = {
+      full_name: fullName,
+      from_name: fullName,
+      user_name: fullName,
+      email: email,
+      reply_to: email,
+      message: message,
+    };
+
     emailjs
-      .sendForm("service_ifz1z0m", "template_rolt4xk", form.current, "rl5-5EWhF22Km5XjP")
+      .send("service_ifz1z0m", "template_rolt4xk", templateParams, "rl5-5EWhF22Km5XjP")
       .then(
         () => {
           setLoading(false);
