@@ -24,22 +24,22 @@ const Hero = () => {
               Expert React Developer & Digital Marketing Specialist crafting exceptional digital experiences that drive results.
             </p>
 
-            <div className="flex flex-row gap-4 justify-center lg:justify-start pt-5">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-5 w-full max-w-xs sm:max-w-none mx-auto lg:mx-0">
               <a
                 href="https://upwork.com/freelancers/usamao3"
-                className="inline-flex items-center justify-center gap-2 px-6 sm:px-5 py-1 sm:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 style={{ backgroundColor: colors.secondary, color: colors.primary }}
               >
-                <Badge className="w-5 h-5 sm:w-6 sm:h-6" />
+                <Badge className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
                 <span>Hire Me</span>
               </a>
               <a
                 href="#portfolio"
-                className="inline-flex items-center justify-center gap-2 px-6 sm:px-5 py-1 sm:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-lg border-2 transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-lg border-2 transition-all duration-300 hover:scale-105"
                 style={{ borderColor: colors.secondary, color: colors.secondary }}
               >
                 <span>View My Work</span>
-                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
