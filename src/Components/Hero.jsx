@@ -26,7 +26,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-5 w-full max-w-xs sm:max-w-none mx-auto lg:mx-0">
               <a
-                href="https://upwork.com/freelancers/usamao3"
+                href="#contact"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 style={{ backgroundColor: colors.secondary, color: colors.primary }}
               >
