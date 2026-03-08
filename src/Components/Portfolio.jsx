@@ -4,7 +4,7 @@ import { useState } from "react"
 import { X, ZoomIn } from "lucide-react"
 import voyager from "../assets/voyager.png"
 import uptora from "../assets/uptora.png"
-import seo from "../assets/seo.png"
+import swag from "../assets/swag.jpg"
 import tiana from "../assets/tiana.png"
 import hungryLionz from "../assets/Hungrylionz.png"
 import bd from "../assets/bdtax1.jpg"
@@ -55,8 +55,8 @@ const Portfolio = () => {
       projects: [
         {
           businessName: "Website SEO Optimization",
-          image: seo,
-          description: "Complete SEO optimization for tax preparation business.",
+          image: swag,
+          description: "Complete SEO optimization for S.W.A.G The First Ai Concierge",
           tech: "SEO | Analytics | Content Strategy"
         },
         {
