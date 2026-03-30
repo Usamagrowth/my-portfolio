@@ -5,6 +5,7 @@ import { X, ZoomIn } from "lucide-react"
 import voyager from "../assets/voyager.png"
 import uptora from "../assets/uptora.png"
 import swag from "../assets/swag.jpg"
+import secol from "../assets/secol.png"
 import tiana from "../assets/tiana.png"
 import hungryLionz from "../assets/Hungrylionz.png"
 import bd from "../assets/bdtax1.jpg"
@@ -53,6 +54,12 @@ const Portfolio = () => {
       title: "Marketing & SEO",
   
       projects: [
+         {
+          businessName: "SECOL Leads Campaign Ad",
+          image: secol,
+          description: "Solar lead campaign",
+          tech: "Ads Manager | Analytics | Content Strategy"
+        },
         {
           businessName: "Website SEO Optimization",
           image: swag,

@@ -1,5 +1,5 @@
 import { DiCss3, DiHtml5, DiJavascript1 } from "react-icons/di"
-import { SiCanva, SiGooglesearchconsole, SiMeta, SiNodedotjs, SiReact, SiTypescript, SiVite, SiTailwindcss, SiFigma, SiAdobephotoshop } from "react-icons/si"
+import { SiCanva, SiGooglesearchconsole, SiMeta, SiReact, SiVite, SiTailwindcss, SiFigma, SiAdobephotoshop } from "react-icons/si"
 import { ThemeCont } from "../contexts/ThemeContext"
 
 const Tools = () => {
@@ -12,7 +12,6 @@ const Tools = () => {
         { icon: DiHtml5, name: "HTML5" },
         { icon: DiCss3, name: "CSS3" },
         { icon: DiJavascript1, name: "JavaScript" },
-        { icon: SiTypescript, name: "TypeScript" },
         { icon: SiReact, name: "React" },
         { icon: SiTailwindcss, name: "Tailwind CSS" },
         { icon: SiVite, name: "Vite" }
@@ -24,7 +23,6 @@ const Tools = () => {
       tools: [
         { icon: SiCanva, name: "Canva" },
         { icon: SiFigma, name: "Figma" },
-        { icon: SiAdobephotoshop, name: "Photoshop" },
         { icon: SiGooglesearchconsole, name: "Google Search Console" },
         { icon: SiMeta, name: "Meta Ads" }
       ]
