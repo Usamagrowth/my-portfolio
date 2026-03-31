@@ -37,7 +37,7 @@ const Portfolio = () => {
           description: "A comprehensive travel and hotel booking platform with modern UI/UX design.",
           tech: "React.jsx | Vite | Tailwind CSS | JS",
           link: "https://travelsandtourvoyage.com",
-          git: "https://github.com/Usamagrowth/Voyager-travelling",
+          git: "https://github.com/Usamagrowth/voyage-travelling",
           featured: true
         },
         {
