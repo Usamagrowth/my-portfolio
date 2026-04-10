@@ -45,7 +45,7 @@ const Portfolio = () => {
           image: uptora,
           description: "E-commerce platform for electronic products with responsive design.",
           tech: "React.jsx | Vite | Tailwind CSS | JS",
-          link: "https://uptora-electronics-store-ymcl.vercel.app/",
+          link: "https://uptora-electronics-store.vercel.app/",
           git: "https://github.com/Usamagrowth/Uptora-electronics-store"
         }
       ]
