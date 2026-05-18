@@ -3,7 +3,7 @@ import { ThemeCont } from "../contexts/ThemeContext"
 import { useState } from "react"
 import { X, ZoomIn } from "lucide-react"
 import voyager from "../assets/voyager.png"
-import uptora from "../assets/uptora.png"
+import uptora from "../assets/uptoraE.png"
 import swag from "../assets/swag.jpg"
 import secol from "../assets/secol.png"
 import tiana from "../assets/tiana.png"
@@ -45,8 +45,8 @@ const Portfolio = () => {
           image: uptora,
           description: "E-commerce platform for electronic products with responsive design.",
           tech: "React.jsx | Vite | Tailwind CSS | JS",
-          link: "https://uptora-electronics-store.vercel.app/",
-          git: "https://github.com/Usamagrowth/Uptora-electronics-store"
+          link: "https://uptora-e-lectronics.vercel.app/",
+          git: "https://github.com/Usamagrowth/Uptora-Electronics"
         }
       ]
     },
