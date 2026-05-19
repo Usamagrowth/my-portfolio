@@ -1,5 +1,6 @@
 import { FacebookIcon, GithubIcon, InstagramIcon, LinkedinIcon, Mail, ExternalLink } from "lucide-react"
 import { ThemeCont } from "../contexts/ThemeContext"
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   const { colors } = ThemeCont();
@@ -78,15 +79,15 @@ const Footer = () => {
                   style={{ color: colors.secondary }}
                 >
                   <InstagramIcon className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://linkedin.com/in/usama-o-53161535b/"
+                 </a>
+                 <a
+                  href="https://x.com/usamagrowthsolu"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full hover:scale-110 transition-all duration-200"
                   style={{ color: colors.secondary }}
                 >
-                  <LinkedinIcon className="w-5 h-5" />
+                  <FaXTwitter className="w-5 h-5" />
                 </a>
               </div>
             </div>
