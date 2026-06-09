@@ -2,7 +2,7 @@ import Card from "./utils/Card"
 import { ThemeCont } from "../contexts/ThemeContext"
 import { useState } from "react"
 import { X, ZoomIn } from "lucide-react"
-import voyager from "../assets/voyager.png"
+import queen from "../assets/queen-travel.png"
 import uptora from "../assets/uptoraE.png"
 import swag from "../assets/swag.jpg"
 import secol from "../assets/secol.png"
@@ -32,20 +32,20 @@ const Portfolio = () => {
       title: "Web Development",
       projects: [
         {
-          businessName: "Voyager Travelling Website",
-          image: voyager,
-          description: "A comprehensive travel and hotel booking platform with modern UI/UX design.",
+          businessName: "Queen Travel Fairy Website",
+          image: queen,
+          description: "A comprehensive travel andTour booking platform with modern UI/UX design.",
           tech: "React.jsx | Vite | Tailwind CSS | JS",
-          link: "https://voyage-travelling.vercel.app",
-          git: "https://github.com/Usamagrowth/voyage-travelling",
+          link: "https://queentravelfairy.com",
+          git: "https://github.com/Usamagrowth/queen-travel-fairy",
           featured: true
         },
         {
           businessName: "Uptora Electronic Store",
           image: uptora,
-          description: "E-commerce platform for electronic products with responsive design.",
-          tech: "React.jsx | Vite | Tailwind CSS | JS",
-          link: "https://uptora-e-lectronics.vercel.app/",
+          description: "E-commerce platform for electronics products with responsive design.",
+          tech: "Next.jsx | MongoDb | Tailwind CSS | Cloud",
+          link: "https://uptora-electronics.vercel.app",
           git: "https://github.com/Usamagrowth/Uptora-Electronics"
         }
       ]
