@@ -31,6 +31,15 @@ const Portfolio = () => {
     {
       title: "Web Development",
       projects: [
+        
+        {
+          businessName: "Uptora Electronic Store",
+          image: uptora,
+          description: "E-commerce platform for electronics products with responsive design.",
+          tech: "Next.jsx | MongoDb | Tailwind CSS | Cloud",
+          link: "https://uptora-electronics.vercel.app",
+          git: "https://github.com/Usamagrowth/Uptora-Electronics"
+        },
         {
           businessName: "Queen Travel Fairy Website",
           image: queen,
@@ -39,14 +48,6 @@ const Portfolio = () => {
           link: "https://queentravelfairy.com",
           git: "https://github.com/Usamagrowth/queen-travel-fairy",
           featured: true
-        },
-        {
-          businessName: "Uptora Electronic Store",
-          image: uptora,
-          description: "E-commerce platform for electronics products with responsive design.",
-          tech: "Next.jsx | MongoDb | Tailwind CSS | Cloud",
-          link: "https://uptora-electronics.vercel.app",
-          git: "https://github.com/Usamagrowth/Uptora-Electronics"
         }
       ]
     },

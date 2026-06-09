@@ -5,10 +5,10 @@ const About = () => {
   const { colors } = ThemeCont();
 
   const stats = [
-    { icon: Code, label: "Projects Completed", value: "50+" },
-    { icon: Users, label: "Happy Clients", value: "30+" },
-    { icon: TrendingUp, label: "Marketing Campaigns", value: "25+" },
-    { icon: Award, label: "Years Experience", value: "2+" }
+    { icon: Code, label: "Projects Completed", value: "20+" },
+    { icon: Users, label: "Happy Clients", value: "10+" },
+    { icon: TrendingUp, label: "Marketing Campaigns", value: "15+" },
+    { icon: Award, label: "Years Experience", value: "3+" }
   ];
 
   return (

@@ -1,6 +1,8 @@
 import { DiCss3, DiHtml5, DiJavascript1 } from "react-icons/di"
 import { SiCanva, SiGooglesearchconsole, SiMeta, SiReact, SiVite, SiTailwindcss, SiFigma, SiAdobephotoshop } from "react-icons/si"
 import { ThemeCont } from "../contexts/ThemeContext"
+import { FcNext } from "react-icons/fc";
+import { RiNextjsFill } from "react-icons/ri";
 
 const Tools = () => {
   const { colors } = ThemeCont();
@@ -13,6 +15,7 @@ const Tools = () => {
         { icon: DiCss3, name: "CSS3" },
         { icon: DiJavascript1, name: "JavaScript" },
         { icon: SiReact, name: "React" },
+        {icon: RiNextjsFill, name: "Next"},
         { icon: SiTailwindcss, name: "Tailwind CSS" },
         { icon: SiVite, name: "Vite" }
       ]
