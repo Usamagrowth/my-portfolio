@@ -38,7 +38,8 @@ const Portfolio = () => {
           description: "E-commerce platform for electronics products with responsive design.",
           tech: "Next.jsx | MongoDb | Tailwind CSS | Cloud",
           link: "https://uptora-electronics.vercel.app",
-          git: "https://github.com/Usamagrowth/Uptora-Electronics"
+          git: "https://github.com/Usamagrowth/Uptora-Electronics",
+          featured: true
         },
         {
           businessName: "Queen Travel Fairy Website",
@@ -47,7 +48,6 @@ const Portfolio = () => {
           tech: "React.jsx | Vite | Tailwind CSS | JS",
           link: "https://queentravelfairy.com",
           git: "https://github.com/Usamagrowth/queen-travel-fairy",
-          featured: true
         }
       ]
     },

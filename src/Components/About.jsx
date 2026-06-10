@@ -8,7 +8,7 @@ const About = () => {
     { icon: Code, label: "Projects Completed", value: "20+" },
     { icon: Users, label: "Happy Clients", value: "10+" },
     { icon: TrendingUp, label: "Marketing Campaigns", value: "15+" },
-    { icon: Award, label: "Years Experience", value: "3+" }
+    { icon: Award, label: "Years Experience", value: "2+" }
   ];
 
   return (
