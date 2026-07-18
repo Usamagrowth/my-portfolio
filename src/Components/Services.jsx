@@ -1,5 +1,6 @@
 import { BarChart, CodeSquareIcon, Globe, PenTool, Target, TrendingUp } from "lucide-react"
 import { ThemeCont } from "../contexts/ThemeContext"
+import { SiN8N } from "react-icons/si";
 
 const Services = () => {
   const { colors } = ThemeCont();
@@ -7,14 +8,14 @@ const Services = () => {
   const services = [
     {
       icon: CodeSquareIcon,
-      title: "Frontend Development",
-      description: "Creating engaging, high-performance web experiences with React, HTML5, and CSS3. Building responsive, intuitive, and accessible interfaces that work seamlessly across all devices.",
+      title: "Software Development",
+      description: "Creating engaging, high-performance web experiences with React, Next, Node, Express, Mongoose, HTML5, and CSS3. Building responsive, intuitive, and accessible interfaces that work seamlessly across all devices.",
       featured: true
     },
     {
-      icon: Globe,
-      title: "Web Design & Development",
-      description: "Building compelling websites from concept to launch. Custom design, responsive development, e-commerce solutions, and ongoing maintenance for outstanding online presence."
+      icon: SiN8N,
+      title: "AI Automation",
+      description: "Automate repetitive tasks, streamline workflows, and connect your business tools to save time and boost efficiency."
     },
     {
       icon: TrendingUp,

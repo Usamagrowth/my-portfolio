@@ -1,25 +1,33 @@
 import { ThemeCont } from "../contexts/ThemeContext"
 import { Star, Quote } from "lucide-react"
-import stephen from "../assets/stephen.png"
+import nickie from "../assets/nickie.jpg"
 import dana from "../assets/Dana.jpg"
 import bianca from "../assets/bianca.png"
+import secol from "../assets/secol1.png"
 
 const Reviews = () => {
   const { colors } = ThemeCont();
 
   const reviews = [
+     {
+      profile: nickie,
+      userName: "Nickie B Queenin",
+      message: "🤩Working with Usama was a great experience. He helped me rebuild my website from the ground up and was incredibly patient every step of the way. He took the time to answer questions, make revisions, and ensure everything looked and functioned the way I wanted. What stood out most was his persistence and commitment to getting the job done right. On top of that, his pricing was very fair. I highly recommend Usama to anyone looking for a skilled, dependable, and affordable web developer.",
+      industry: "Traveling Industry",
+      rating: 5
+    },
+     {
+      profile: secol,
+      userName: "SECOL Electric",
+      message: "Working with you was a great experience you understood what i wanted and built a clean, professional website that i'm really happy with. Communication was smooth, and you were patient throughout the process. Thank you for the great job. I highly recommend your service.",
+      industry: "Electrical Industry",
+      rating: 5
+    },
     {
       profile: dana,
       userName: "Diana",
       message: "Usama growth solutions is definitely a company of knowledge, professionalism and kindness. Make sure you reach out to this company for your business needs. Websites, social media, flyers etc. I'll be back for more services. Thank you Usama Growth Solutions.",
       industry: "Finance Industry",
-      rating: 5
-    },
-    {
-      profile: stephen,
-      userName: "Stephen Browing",
-      message: "Yes he did a great work, each and everyone seeing this text or message of him Thanks so much.",
-      industry: "Insurance Industry",
       rating: 5
     },
     {

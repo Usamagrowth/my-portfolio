@@ -1,15 +1,16 @@
-import { DiCss3, DiHtml5, DiJavascript1 } from "react-icons/di"
-import { SiCanva, SiGooglesearchconsole, SiMeta, SiReact, SiVite, SiTailwindcss, SiFigma, SiAdobephotoshop } from "react-icons/si"
+import { DiCss3, DiHtml5, DiJavascript1, DiMongodb } from "react-icons/di"
+import { SiCanva, SiGooglesearchconsole, SiMeta, SiReact, SiVite, SiTailwindcss, SiFigma, SiAdobephotoshop, SiExpress, SiN8N } from "react-icons/si"
 import { ThemeCont } from "../contexts/ThemeContext"
 import { FcNext } from "react-icons/fc";
 import { RiNextjsFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
 
 const Tools = () => {
   const { colors } = ThemeCont();
 
   const toolCategories = [
     {
-      title: "Frontend Development",
+      title: "Software Development",
       tools: [
         { icon: DiHtml5, name: "HTML5" },
         { icon: DiCss3, name: "CSS3" },
@@ -17,7 +18,11 @@ const Tools = () => {
         { icon: SiReact, name: "React" },
         {icon: RiNextjsFill, name: "Next"},
         { icon: SiTailwindcss, name: "Tailwind CSS" },
-        { icon: SiVite, name: "Vite" }
+        { icon: SiVite, name: "Vite" },
+        { icon: SiExpress, name: "Express" },
+        { icon: FaNodeJs, name: "Node" },
+        { icon: DiMongodb, name: "Mongodb" },
+        { icon: SiN8N, name: "n8n" },
       ]
     },
   

@@ -21,7 +21,7 @@ const Hero = () => {
             <Awriter />
 
             <p className="text-xl leading-relaxed max-w-lg mx-auto lg:mx-0" style={{ color: colors.text }}>
-              Expert React Developer & Digital Marketing Specialist crafting exceptional digital experiences that drive results.
+              Software Developer, Digital Marketer & AI Automation. Specialise in crafting exceptional digital experiences that drive results.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-5 w-full max-w-xs sm:max-w-none mx-auto lg:mx-0">
