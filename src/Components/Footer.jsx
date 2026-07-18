@@ -80,16 +80,7 @@ const Footer = () => {
                 >
                   <InstagramIcon className="w-5 h-5" />
                 </a>
-                <a
-                  href="https://linkedin.com/in/usama-o-53161535b/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full hover:scale-110 transition-all duration-200"
-                  style={{ color: colors.secondary }}
-                >
-                  <LinkedinIcon className="w-5 h-5" />
-                </a>
-                 <a
+               <a
                   href="https://x.com/usamagrowthsolu"
                   target="_blank"
                   rel="noopener noreferrer"
