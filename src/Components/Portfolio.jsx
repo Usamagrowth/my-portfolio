@@ -9,7 +9,6 @@ import secol from "../assets/secol.png"
 import tiana from "../assets/tiana.png"
 import hungryLionz from "../assets/Hungrylionz.png"
 import bd from "../assets/bdtax1.jpg"
-import bdtax from "../assets/bdtax.jpg"
 import jamo from  "../assets/Jamoskido.png"
 import seo1 from "../assets/usamaseo.jpeg"
 const Portfolio = () => {
@@ -89,12 +88,6 @@ const Portfolio = () => {
           image: hungryLionz,
           description: "Eye-catching promotional flyer for Hungry Lionz restaurant.",
           tech: "Canva | Branding"
-        },
-        {
-          businessName: "Tax Services Flyer",
-          image: bdtax,
-          description: "Professional marketing flyer for BD Tax and Financial Services.",
-          tech: "Canva | Print Design"
         },
         {
           businessName: "Tax Logo Design",
