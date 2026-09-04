@@ -13,6 +13,7 @@ import jamo from  "../assets/Jamoskido.png"
 import seo1 from "../assets/usamaseo.jpeg"
 import auto1 from "../assets/auto6.png"
 import auto2 from "../assets/auto2.png"
+import auto3 from "../assets/auto3.png"
 const Portfolio = () => {
   const { colors } = ThemeCont();
   const [selectedImage, setSelectedImage] = useState(null);
