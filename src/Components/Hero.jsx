@@ -13,12 +13,13 @@ const Hero = () => {
           <div className="text-center lg:text-left space-y-6 pt-3">
             <div className="space-y-2">
               <p className="font-medium tracking-wide text-lg" style={{ color: colors.accent }}>HI, I'M USAMA</p>
-              <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight" style={{ color: colors.text }}>
+              <h1 className="text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 font-bold" style={{ color: colors.text }}>
                 I Build Digital Growth Systems That Generate Leads, Drive Sales & Automate Operations.
               </h1>
             </div>
 
             <Awriter />
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4 w-full max-w-xs sm:max-w-none mx-auto lg:mx-0">
               <a
                 href="#contact"
