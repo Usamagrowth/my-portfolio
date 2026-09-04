@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="text-center lg:text-left space-y-6 pt-3">
             <div className="space-y-2">
               <p className="font-medium tracking-wide text-lg" style={{ color: colors.accent }}>HI, I'M USAMA</p>
-              <h1 className="text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 font-bold" style={{ color: colors.text }}>
+              <h1 className="text-2xl leading-relaxed max-w-3xl mx-auto lg:mx-0 font-bold" style={{ color: colors.text }}>
                 I Build Digital Growth Systems That Generate Leads, Drive Sales & Automate Operations.
               </h1>
             </div>
