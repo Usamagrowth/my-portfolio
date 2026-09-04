@@ -10,29 +10,36 @@ const Tools = () => {
 
   const toolCategories = [
     {
-      title: "Software Development",
+      title: "Web Development",
       tools: [
         { icon: DiHtml5, name: "HTML5" },
         { icon: DiCss3, name: "CSS3" },
         { icon: DiJavascript1, name: "JavaScript" },
         { icon: SiReact, name: "React" },
-        {icon: RiNextjsFill, name: "Next"},
+        {icon: RiNextjsFill, name: "Next.js"},
         { icon: SiTailwindcss, name: "Tailwind CSS" },
         { icon: SiVite, name: "Vite" },
         { icon: SiExpress, name: "Express" },
-        { icon: FaNodeJs, name: "Node" },
-        { icon: DiMongodb, name: "Mongodb" },
-        { icon: SiN8N, name: "n8n" },
+        { icon: FaNodeJs, name: "Node.js" },
+        { icon: DiMongodb, name: "MongoDB" },
       ]
     },
   
     {
-      title: "Design & Marketing",
+      title: "Digital Marketing",
       tools: [
-        { icon: SiCanva, name: "Canva" },
-        { icon: SiFigma, name: "Figma" },
         { icon: SiGooglesearchconsole, name: "Google Search Console" },
-        { icon: SiMeta, name: "Meta Ads" }
+        { icon: SiMeta, name: "Meta Ads" },
+        { icon: SiCanva, name: "Canva" },
+        { icon: SiFigma, name: "Figma" }
+      ]
+    },
+    {
+      title: "AI Automation",
+      tools: [
+        { icon: SiN8N, name: "n8n" },
+        { icon: SiExpress, name: "API Integration" },
+        { icon: FaNodeJs, name: "Workflow Automation" }
       ]
     }
   ];

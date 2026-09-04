@@ -11,6 +11,8 @@ import hungryLionz from "../assets/Hungrylionz.png"
 import bd from "../assets/bdtax1.jpg"
 import jamo from  "../assets/Jamoskido.png"
 import seo1 from "../assets/usamaseo.jpeg"
+import auto1 from "../assets/auto6.png"
+import auto2 from "../assets/auto2.png"
 const Portfolio = () => {
   const { colors } = ThemeCont();
   const [selectedImage, setSelectedImage] = useState(null);
@@ -34,8 +36,8 @@ const Portfolio = () => {
         {
           businessName: "Uptora Electronic Store",
           image: uptora,
-          description: "E-commerce platform for electronics products with responsive design.",
-          tech: "Next.jsx | MongoDb | Tailwind CSS | Cloud",
+          description: "Built a complete e-commerce platform to help an electronics business sell products online. The solution includes product management, secure payments, and responsive design for mobile customers.",
+          tech: "Next.js | MongoDB | Tailwind CSS | Cloud",
           link: "https://uptora-electronics.vercel.app",
           git: "https://github.com/Usamagrowth/Uptora-Electronics",
           featured: true
@@ -43,8 +45,8 @@ const Portfolio = () => {
         {
           businessName: "Queen Travel Fairy Website",
           image: queen,
-          description: "A comprehensive travel andTour booking platform with modern UI/UX design.",
-          tech: "React.jsx | Vite | Tailwind CSS | JS",
+          description: "Created a comprehensive travel and tour booking platform with modern UI/UX design to help a travel business reach more customers and streamline bookings.",
+          tech: "React | Vite | Tailwind CSS | JavaScript",
           link: "https://queentravelfairy.com",
           git: "https://github.com/Usamagrowth/queen-travel-fairy",
         }
@@ -57,48 +59,60 @@ const Portfolio = () => {
          {
           businessName: "SECOL Leads Campaign Ad",
           image: secol,
-          description: "Solar lead campaign",
+          description: "Developed and managed a solar lead generation campaign using targeted advertising and analytics to help an electrical business attract qualified prospects.",
           tech: "Ads Manager | Analytics | Content Strategy"
         },
         {
           businessName: "Website SEO Optimization",
           image: swag,
-          description: "Complete SEO optimization for S.W.A.G The First Ai Concierge",
+          description: "Implemented complete SEO optimization for S.W.A.G The First AI Concierge to improve search visibility and attract organic traffic.",
           tech: "SEO | Analytics | Content Strategy"
-        },
-        {
-          businessName: "Website & Local SEO",
-          image: seo1,
-          description: "Comprehensive SEO strategy for Usama Growth Solutions.",
-          tech: "Local SEO | Content Marketing | Analytics"
         }
       ]
     },
+ {
+      title: "AI Automation",
+      projects: [
+        {
+          businessName: "Lead Nurturing Workflow",
+          image: auto1,
+          description: "Built an automated lead nurturing system that captures leads, qualifies them based on criteria, and sends personalized follow-up sequences through email and messaging platforms.",
+          tech: "n8n | Email Automation | Lead Qualification | CRM Integration"
+        },
+        {
+          businessName: "Business Process Automation",
+          image: auto2,
+          description: "Developed custom automation workflows to streamline repetitive business operations, including data entry, report generation, and task scheduling, saving hours of manual work weekly.",
+          tech: "n8n | API Integration | Workflow Automation | Process Optimization"
+        }
+      ]
+    },
+
     {
       title: "Graphic Design",
       projects: [
         {
           businessName: "Real Estate Flyer",
           image: tiana,
-          description: "Professional flyer design for real estate agent Tiana Clarke.",
+          description: "Designed professional marketing materials for a real estate agent to support property promotions and client communications.",
           tech: "Canva | Graphic Design"
         },
         {
           businessName: "Restaurant Flyer",
           image: hungryLionz,
-          description: "Eye-catching promotional flyer for Hungry Lionz restaurant.",
+          description: "Created eye-catching promotional materials for a restaurant to support marketing campaigns and customer acquisition.",
           tech: "Canva | Branding"
         },
         {
           businessName: "Tax Logo Design",
           image: bd,
-          description: "Custom logo design for BD Tax and Financial Services.",
+          description: "Developed custom branding and logo design for a tax and financial services company to establish professional identity.",
           tech: "Canva | Logo Design"
         },
         {
           businessName: "Arts & Painting Logo",
           image: jamo,
-          description: "Creative logo design for arts and painting business.",
+          description: "Designed creative branding materials for an arts and painting business to support marketing and brand recognition.",
           tech: "Canva | Branding"
         }
       ]
@@ -115,17 +129,16 @@ const Portfolio = () => {
         <div className="text-center mb-16">
           <p className="text-lg font-medium mb-4" style={{ color: colors.accent }}>PORTFOLIO</p>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: colors.text }}>
-            My Work Speaks
+            Real Business Problems Solved
           </h2>
           <p className="text-xl max-w-3xl mx-auto text-gray-600">
-            Showcasing projects that blend creativity, technology, and strategic thinking
+            Showcasing projects that demonstrate practical solutions for business growth
           </p>
         </div>
 
         {categories.map((category, categoryIndex) => (
           <div key={categoryIndex} className="mb-20">
             <div className="flex items-center gap-4 mb-12">
-              <span className="text-4xl">{category.icon}</span>
               <h3 className="text-3xl font-bold" style={{ color: colors.text }}>
                 {category.title}
               </h3>
@@ -152,6 +165,7 @@ const Portfolio = () => {
                       src={project.image}
                       alt={project.businessName}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
@@ -210,7 +224,7 @@ const Portfolio = () => {
 
         {/* Call to action */}
         <div className="text-center mt-16">
-          <p className="text-lg mb-6 text-gray-600">
+          <p className="text-lg mb-6 text-gray-400">
             Interested in working together?
           </p>
           <a

@@ -10,28 +10,23 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="text-center lg:text-left space-y-3 pt-3">
-            <div className="space-y-2 flex items-center lg:justify-start justify-center gap-3">
-              <p className="font-medium tracking-wide text-xl" style={{ color: colors.accent }}>HI, I'M</p>
-              <h1 className="text-4xl lg:text-7xl font-bold leading-tight" style={{ color: colors.text }}>
-                Usama
+          <div className="text-center lg:text-left space-y-6 pt-3">
+            <div className="space-y-2">
+              <p className="font-medium tracking-wide text-lg" style={{ color: colors.accent }}>HI, I'M USAMA</p>
+              <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight" style={{ color: colors.text }}>
+                I Build Digital Growth Systems That Generate Leads, Drive Sales & Automate Operations.
               </h1>
             </div>
 
             <Awriter />
-
-            <p className="text-xl leading-relaxed max-w-lg mx-auto lg:mx-0" style={{ color: colors.text }}>
-              Software Developer, Digital Marketer & AI Automation. Specialise in crafting exceptional digital experiences that drive results.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-5 w-full max-w-xs sm:max-w-none mx-auto lg:mx-0">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4 w-full max-w-xs sm:max-w-none mx-auto lg:mx-0">
               <a
                 href="#contact"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 style={{ backgroundColor: colors.secondary, color: colors.primary }}
               >
                 <Badge className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
-                <span>Hire Me</span>
+                <span>Start a Project</span>
               </a>
               <a
                 href="#portfolio"
@@ -47,11 +42,12 @@ const Hero = () => {
           {/* Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-4" style={{ borderColor: colors.secondary }}>
+              <div className="w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-4" style={{ borderColor: colors.secondary }}>
                 <img
-                  className="w-full h-full object-cover "
+                  className="w-full h-full object-cover"
                   src="usama01.png"
-                  alt="Usama - Expert React Developer & Digital Marketing Specialist"
+                  alt="Usama - Digital Growth Systems Expert"
+                  loading="eager"
                 />
               </div>
               {/* Decorative elements */}

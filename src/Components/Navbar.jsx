@@ -5,7 +5,8 @@ import { ThemeCont } from "../contexts/ThemeContext"
 const navLinks = [
   { label: "Home", href: "#" },
   { label: "About", href: "#about" },
-  { label: "Service", href: "#service" },
+  { label: "Services", href: "#service" },
+  { label: "Process", href: "#process" },
   { label: "Portfolio", href: "#portfolio" },
   { label: "Blog", href: "https://usamagrowthsolutions.blogspot.com/", external: true },
   { label: "Contact", href: "#contact" },
@@ -62,7 +63,7 @@ const Navbar = () => {
           </button>
 
           <div onClick={() => setMobile(!mobile)} className="lg:hidden z-[200] cursor-pointer">
-            {mobile ? <X style={{ color: colors.secondary }} className="h-9 w-9" /> : <Menu style={{ color: colors.secondrary }} className="h-9 w-9" />}
+            {mobile ? <X style={{ color: colors.secondary }} className="h-9 w-9" /> : <Menu style={{ color: colors.secondary }} className="h-9 w-9" />}
           </div>
         </div>
       </nav>

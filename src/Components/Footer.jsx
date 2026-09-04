@@ -81,7 +81,7 @@ const Footer = () => {
                   <InstagramIcon className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/usama-o-53161535b/"
+                  href="https://www.linkedin.com/in/usama-a-omodara-11428b429/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full hover:scale-110 transition-all duration-200"

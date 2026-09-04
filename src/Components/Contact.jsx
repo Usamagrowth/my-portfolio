@@ -44,9 +44,12 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-lg font-medium mb-4" style={{ color: colors.accent }}>GET IN TOUCH</p>
-          <h2 className="text-4xl lg:text-5xl font-bold" style={{ color: colors.text }}>
-            Let's Work Together
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: colors.text }}>
+            Have a Project in Mind?
           </h2>
+          <p className="text-xl max-w-2xl mx-auto" style={{ color: colors.text }}>
+            Let's discuss how we can build, grow, or automate it.
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
@@ -192,7 +195,7 @@ const Contact = () => {
                     </>
                   ) : (
                     <>
-                      Send Message
+                      Start a Project
                       <Send className="w-5 h-5" />
                     </>
                   )}

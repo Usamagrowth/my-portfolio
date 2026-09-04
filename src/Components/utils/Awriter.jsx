@@ -4,16 +4,12 @@ import { ThemeCont } from "../../contexts/ThemeContext";
 export default function Awriter() {
   const { colors } = ThemeCont();
   const texts = [
-    "Software Developer",
+    "Web Development",
+    "Digital Marketing",
     "AI Automation",
-    "Digital marketer",
-    "Funnel Builder",
-    " Ads Specialist",
-    "SEO Experts",
-    "Leads Generation",
-    "Email Marketing",
-    "Web Design & Development",
-    "Graphics Design"
+    "Lead Generation",
+    "Business Growth",
+    "Process Automation"
   ];
 
   const [index, setIndex] = useState(0); // Keeps track of the current text

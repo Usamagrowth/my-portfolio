@@ -5,6 +5,7 @@ import Footer from "../Components/Footer"
 import Hero from "../Components/Hero"
 import Navbar from "../Components/Navbar"
 import Portfolio from "../Components/Portfolio"
+import Process from "../Components/Process"
 import Reviews from "../Components/Reviews"
 import Services from "../Components/Services"
 import Tools from "../Components/Tools"
@@ -16,6 +17,7 @@ const Home = () => {
      <Hero />
      <About />
      <Services />
+     <Process />
      <Tools />
      <Discount />
      <Portfolio />

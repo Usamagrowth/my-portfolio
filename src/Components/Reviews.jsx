@@ -79,6 +79,7 @@ const Reviews = () => {
                   alt={review.userName}
                   className="w-12 h-12 rounded-full object-cover border-2"
                   style={{ borderColor: colors.secondary }}
+                  loading="lazy"
                 />
                 <div>
                   <h4 className="font-semibold text-gray-800">

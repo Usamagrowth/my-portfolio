@@ -1,5 +1,5 @@
 import { ThemeCont } from "../contexts/ThemeContext";
-import { Award, Users, Code, TrendingUp } from "lucide-react";
+import { Award, Users, Code, TrendingUp, Zap, Target, BarChart } from "lucide-react";
 
 const About = () => {
   const { colors } = ThemeCont();
@@ -17,7 +17,7 @@ const About = () => {
         <div className="text-center mb-16">
           <p className="text-lg font-medium mb-4" style={{ color: colors.accent }}>ABOUT ME</p>
           <h2 className="text-4xl lg:text-5xl font-bold" style={{ color: colors.text }}>
-            Crafting Digital Excellence
+            Building Digital Growth Systems
           </h2>
         </div>
 
@@ -25,22 +25,44 @@ const About = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <p className="text-xl leading-relaxed" style={{ color: colors.text }}>
-                I specialize in the convergence of high-performance Frontend Development and strategic Digital Marketing. My goal is simple: to create exceptional digital experiences and robust online brands.
+                I help businesses build complete digital growth systems that combine Web Development, Digital Marketing, and AI Automation. My approach focuses on creating practical solutions that drive real business outcomes.
               </p>
               <p className="text-xl leading-relaxed" style={{ color: colors.text }}>
-                Whether delivering a highly optimized, captivating website or scaling a targeted advertising campaign, I focus on innovative, measurable solutions that drive success.
+                Instead of treating these as separate services, I integrate them into a cohesive system: BUILD your digital presence, ATTRACT qualified leads, and AUTOMATE repetitive operations. This holistic approach helps businesses operate more efficiently and grow sustainably.
               </p>
             </div>
 
-            {/* Skills */}
+            {/* Core Pillars */}
             <div className="space-y-4">
-              <h3 className="text-2xl font-semibold" style={{ color: colors.text }}>Core Expertise</h3>
-              <div className="grid grid-cols-2 gap-4">
-                {['React', 'Next', 'Node', 'SEO', 'Analytics', 'Design', 'Marketing', 'AI Automation'].map((skill, index) => (
-                  <div key={index} className="px-4 py-2 rounded-lg text-center font-medium" style={{ backgroundColor: colors.primary, color: colors.secondary }}>
-                    {skill}
+              <h3 className="text-2xl font-semibold" style={{ color: colors.text }}>How I Think About Business Problems</h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <div className="p-2 rounded-lg" style={{ backgroundColor: colors.secondary }}>
+                    <Zap className="w-5 h-5" style={{ color: colors.primary }} />
                   </div>
-                ))}
+                  <div>
+                    <h4 className="font-semibold" style={{ color: colors.text }}>Technology + Business Strategy</h4>
+                    <p className="text-sm opacity-80" style={{ color: colors.text }}>I don't just build websites; I build systems that support your business goals.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="p-2 rounded-lg" style={{ backgroundColor: colors.secondary }}>
+                    <Target className="w-5 h-5" style={{ color: colors.primary }} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold" style={{ color: colors.text }}>Results-Driven Approach</h4>
+                    <p className="text-sm opacity-80" style={{ color: colors.text }}>Every solution is designed to generate leads, drive sales, or improve efficiency.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="p-2 rounded-lg" style={{ backgroundColor: colors.secondary }}>
+                    <BarChart className="w-5 h-5" style={{ color: colors.primary }} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold" style={{ color: colors.text }}>Data-Informed Decisions</h4>
+                    <p className="text-sm opacity-80" style={{ color: colors.text }}>I use analytics and performance data to continuously optimize and improve results.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
