@@ -81,7 +81,7 @@ const Footer = () => {
                   <InstagramIcon className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/usama-a-omodara-11428b429/"
+                  href="https://www.linkedin.com/in/usama-omodara-11428b429"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full hover:scale-110 transition-all duration-200"
@@ -109,7 +109,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Usama Growth Solutions. All rights reserved.
           </p>
           <a
-            href="https://usamagrowthsolutions.blogspot.com/"
+            href="https://usamagrowthsolutions.blogspot.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 hover:text-opacity-80 transition-colors duration-200"
